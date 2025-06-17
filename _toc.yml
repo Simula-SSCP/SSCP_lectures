@@ -7,6 +7,10 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/L03_FEniCS_Darcy.ipynb"
 
+  - caption: Electrical activity in tissues
+    chapters:
+      - file: "L07 (Cable Equation)/L7.ipynb"
+      - file: "L08 (Electrical Conduction in the Heart)/L8_cardiac.ipynb"
   # - caption: FEniCS Electrophysiology
   #   chapters:
   #     - file: "L13 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
