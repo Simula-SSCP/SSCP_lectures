@@ -1,0 +1,68 @@
+[workspace]
+authors = ["Min RK <benjaminrk@simula.no>"]
+channels = ["conda-forge", "conda-forge/label/fenics-dev", "minrk"]
+name = "simula-summer-school"
+platforms = ["linux-64"]
+version = "2025"
+
+[tasks]
+
+[dependencies]
+
+# base env
+python = "3.12.*"
+conda = ">=25.3.1"
+mamba = ">=2.1.1"
+git = ">=2.49.0"
+
+# scientific packages
+mpich = ">=4"
+fenics-dolfinx = "0.9.*"
+fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
+# specify pacakges from fenics-dev channel
+fenics-dolfin = { channel = "conda-forge/label/fenics-dev" }
+fenics-libdolfin = { channel = "conda-forge/label/fenics-dev" }
+fenics-ffc = { channel = "conda-forge/label/fenics-dev" }
+fenics-fiat = { channel = "conda-forge/label/fenics-dev" }
+
+sympy = "<1.14"
+neuron = ">=8.2.4"
+lfpy = ">=2.3.2"
+python-neo = ">=0.14.1"
+browndye = ">=2023.12.29"
+brian2 = ">=2.8.0.4"
+
+# packaged in this repo:
+opencarp = { version = "18.0.*", channel = "minrk" }
+carputils = { version = "18.0.*", channel = "minrk" }
+
+# basic Python
+black = ">=25.1.0"
+isort = ">=6.0.1"
+ruff = ">=0.11.8"
+matplotlib-base = ">=3"
+cython = ">=3.0.12"
+scipy = ">=1.15.2"
+seaborn = ">=0.13.2"
+numba = ">=0.61.2"
+pandas = ">=2.2.3"
+altair = ">=5.5.0"
+scikit-learn = ">=1.6.1"
+pytorch-cpu = ">=2.6.0"
+pytest = ">=8.3.5"
+wurlitzer = ">=3.1.1"
+tqdm = ">=4.67.1"
+
+# Jupyter
+jupyterlab = "4.*"
+jupyterhub-base = "==5.3.0"
+jupyter-resource-usage = ">=1.1.1"
+jupyterlab_code_formatter = ">=3.0.2"
+jupyterlab-git = ">=0.51.1"
+nbdime = ">=4.0.2"
+notebook = ">=7.4.1"
+ipykernel = ">=6.29.5"
+ipywidgets = ">=8.1.7"
+nbgitpuller = ">=1.2.2"
+binutils = ">=2.43"
+jupyter-book = ">=1.0.4.post1"

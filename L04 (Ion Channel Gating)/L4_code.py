@@ -380,7 +380,7 @@ def plot_scalar(V, color = 'b'):
     plt.figure(3);
     plt.clf()
     plt.plot(V, C_m*dV_dt, color, V,  -I_K_full, 'k', V,  -I_Na_full -I_K_full,'r')
-    plt.legend(['$dV/dt$','$I_K$','$I_{K}+I_{Na,\max}$'])
+    plt.legend(['$dV/dt$','$I_K$','$I_{K}+I_{Na,max}$'])
     #plt.ylim(-0.5,0.5)
     plt.grid()
 
@@ -455,7 +455,7 @@ def solve_and_plot(V0, h0, Vam, Vbm, Vah, Vbh):
     Vp = np.linspace(E_K - 1, E_Na + 1, num=1000)
     V_null, h_null = get_nullclines(Vp)
     axs[1, 0].plot(Vp, V_null, Vp, h_null)
-    axs[1, 0].legend(['$\dot{V}=0$', '$\dot{h}=0$'])
+    axs[1, 0].legend([r'$\dot{V}=0$', r'$\dot{h}=0$'])
     axs[1, 0].set_ylim(-0.2, 1.2)
     axs[1, 0].set_xlabel('V (mV)')  # Custom label
     axs[1, 0].set_ylabel('Nullclines')

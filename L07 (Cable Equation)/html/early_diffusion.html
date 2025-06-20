@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .content-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+      }
+      .timeline-dot {
+        background: #4f46e5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container flex p-16">
+      <!-- Left Column: Content -->
+      <div class="flex-1 pr-8">
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 class="text-5xl font-bold text-gray-800 mb-4">Early Diffusion Models</h1>
+          <div class="flex items-center text-gray-600 text-xl">
+            <div class="timeline-dot w-4 h-4 rounded-full mr-4"></div>
+            <span class="font-medium">1850s</span>
+          </div>
+        </div>
+
+        <!-- Main Content Card -->
+        <div class="content-card rounded-2xl p-8 mb-6 shadow-lg">
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+              <i class="fas fa-lightbulb text-blue-600 mr-3"></i>
+              Lord Kelvin's Work
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+              William Thomson (later Lord Kelvin) developed the first mathematical model to understand 
+              signal behavior in submarine telegraph cables.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 mb-6">
+            <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h3 class="font-semibold text-gray-800 mb-2">The Diffusion Approach</h3>
+              <p class="text-gray-700">
+                Modeled signal propagation as a diffusion process, similar to heat conduction
+              </p>
+            </div>
+            <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+              <h3 class="font-semibold text-gray-800 mb-2">Observed Limitations</h3>
+              <p class="text-gray-700">
+                Could not fully explain observed delays and signal degradation in long cables
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 rounded-lg p-4">
+            <h3 class="font-semibold text-gray-800 mb-2">Historical Context</h3>
+            <p class="text-gray-700 text-sm">
+              The first transatlantic telegraph cable attempts were driving the need 
+              for better understanding of signal transmission over long distances.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual -->
+      <div class="w-96 flex flex-col">
+        <!-- Portrait -->
+        <div class="content-card rounded-2xl p-6 mb-6 shadow-lg text-center">
+          <img src="https://private-us-east-1.manuscdn.com/sessionFile/13fECBAgnl2R0NK0oSEiDV/sandbox/slides_resource_imf8zk69xz761krl19lxs-368786dc-e2b-prod-aws_1750015773568_na1fn_L2hvbWUvdWJ1bnR1L2NhYmxlX2VxdWF0aW9uX3ByZXNlbnRhdGlvbi9sb3JkX2tlbHZpbg.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1767225600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMTNmRUNCQWdubDJSME5LMG9TRWlEVi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWY4ems2OXh6NzYxa3JsMTlseHMtMzY4Nzg2ZGMtZTJiLXByb2QtYXdzXzE3NTAwMTU3NzM1NjhfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTmhZbXhsWDJWeGRXRjBhVzl1WDNCeVpYTmxiblJoZEdsdmJpOXNiM0prWDJ0bGJIWnBiZy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=dEcCTqE1kj042tc5EcwGSkpA0cIG9oIiosJ2O2PXItAerv6IGAKL4ZQ0mkiMyWjddn-X~T4zt0lgowzZDniyEcG4eeP7QVr7~9DgQDnh7aTK-cjRHfXTZj60N58Iulej9SctyBExVIkGA7V915FVqM1q-AxnEvIE5ODAmOrL3hNIFdvoHUtepfQkZT40WJgA1TooD~oY63FhkJErd2E00WEt1nJXUDwlmdk8ynrJvwwzbRsqXmskQ4teUQ~~lwfefuIHwBNs1zXshH1GPDWzzXkXLZbRm98usvK2KS9ZZIvZ1LZEU7HwtmVeH34HCJ7Tt0tP1QLjD2tkNT~7FByDZA__" 
+               alt="Lord Kelvin" 
+               class="w-48 h-60 object-cover rounded-lg mx-auto mb-4 shadow-md">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Lord Kelvin</h3>
+          <p class="text-gray-600 text-sm mb-2">(William Thomson)</p>
+          <p class="text-gray-700 text-sm">1824-1907</p>
+        </div>
+
+        <!-- Cable Illustration -->
+        <div class="content-card rounded-2xl p-6 shadow-lg">
+          <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Submarine Cable Operations</h3>
+          <img src="https://private-us-east-1.manuscdn.com/sessionFile/13fECBAgnl2R0NK0oSEiDV/sandbox/slides_resource_imf8zk69xz761krl19lxs-368786dc-e2b-prod-aws_1750015773568_na1fn_L2hvbWUvdWJ1bnR1L2NhYmxlX2VxdWF0aW9uX3ByZXNlbnRhdGlvbi90ZWxlZ3JhcGhfY2FibGU.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1767225600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMTNmRUNCQWdubDJSME5LMG9TRWlEVi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWY4ems2OXh6NzYxa3JsMTlseHMtMzY4Nzg2ZGMtZTJiLXByb2QtYXdzXzE3NTAwMTU3NzM1NjhfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTmhZbXhsWDJWeGRXRjBhVzl1WDNCeVpYTmxiblJoZEdsdmJpOTBaV3hsWjNKaGNHaGZZMkZpYkdVLmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE1NjAsaF8xNTYwL2Zvcm1hdCx3ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Z9EfGIVNRicDquCQuTM4hOeFLIQVdHHo7sEJjnqQ-8CIlvjIVzuoFGF2oVXQZgLvOibZ3gs-8UoLqOTjTSiUYBgWE0S53PhflUhJSt~2dxHRY3SZSdpMTG8SlBLDCPGOfSGp7ms64ez0ZVZVk04ph0W5BikDf-fOiRy7C~dvD95h0hI73q8NPJtfAotbeDPK2xLtFdVMRlWy48rIi-Fdlj26DBviBbGblgUtsIotZfDiDkNTW1KNrQud4Z7SgsoFutYqR7aZA8hRM5Ktdl3LzA3M205TTlqbNh3qoQ2Qpq~55uDgqLTHyljtm46i1fyT~BsRAxFusLd4l3f-Ggdgkw__" 
+               alt="Telegraph Cable" 
+               class="w-full h-32 object-cover rounded-lg shadow-md">
+          <p class="text-gray-600 text-xs mt-3 text-center">
+            Early submarine telegraph cable laying operations
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

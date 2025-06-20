@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .content-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+      }
+      .impact-card {
+        transition: transform 0.3s ease;
+      }
+      .impact-card:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-16">
+      <!-- Header -->
+      <div class="mb-8">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">Historical Significance and Impact</h1>
+        <p class="text-xl text-gray-600">Practical Applications and Theoretical Advances</p>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid grid-cols-3 gap-6 mb-8">
+        <!-- Cable Design Impact -->
+        <div class="content-card rounded-2xl p-6 shadow-lg impact-card">
+          <div class="text-center mb-4">
+            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-tools text-white text-2xl"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Cable Design Improvements</h2>
+          </div>
+          <div class="space-y-3">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Heaviside's equations helped understand the limitations of early 
+              transatlantic cables and guided design improvements.
+            </p>
+            <div class="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500">
+              <p class="text-xs text-gray-600">
+                <strong>Result:</strong> Improved cable designs with better signal integrity 
+                over long distances.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Theoretical Foundation -->
+        <div class="content-card rounded-2xl p-6 shadow-lg impact-card">
+          <div class="text-center mb-4">
+            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-graduation-cap text-white text-2xl"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Theoretical Foundation</h2>
+          </div>
+          <div class="space-y-3">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Provided mathematical foundation for understanding signal propagation 
+              in various transmission line applications.
+            </p>
+            <div class="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+              <p class="text-xs text-gray-600">
+                <strong>Impact:</strong> Enabled systematic analysis of electromagnetic 
+                wave propagation in guided media.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Broader Applications -->
+        <div class="content-card rounded-2xl p-6 shadow-lg impact-card">
+          <div class="text-center mb-4">
+            <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-network-wired text-white text-2xl"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Extended Applications</h2>
+          </div>
+          <div class="space-y-3">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Extended beyond telegraph cables to radio frequency conductors, 
+              power lines, and other transmission systems.
+            </p>
+            <div class="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500">
+              <p class="text-xs text-gray-600">
+                <strong>Application:</strong> Universal principles applicable to 
+                electromagnetic transmission lines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Historical Context -->
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Timeline Impact -->
+        <div class="content-card rounded-2xl p-6 shadow-lg">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">
+            <i class="fas fa-clock mr-3 text-orange-500"></i>
+            Timeline of Development
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-4 h-4 bg-red-500 rounded-full mr-4 flex-shrink-0"></div>
+              <div>
+                <p class="font-semibold text-gray-800 text-sm">1850s</p>
+                <p class="text-gray-600 text-xs">Kelvin's diffusion model - limited success</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+              <div>
+                <p class="font-semibold text-gray-800 text-sm">Late 1870s</p>
+                <p class="text-gray-600 text-xs">Heaviside's wave theory development</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+              <div>
+                <p class="font-semibold text-gray-800 text-sm">1880s onwards</p>
+                <p class="text-gray-600 text-xs">Practical cable improvements implemented</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual: Cable Map -->
+        <div class="content-card rounded-2xl p-6 shadow-lg">
+          <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">Transatlantic Cable Network</h2>
+          <img src="https://private-us-east-1.manuscdn.com/sessionFile/13fECBAgnl2R0NK0oSEiDV/sandbox/slides_resource_imf8zk69xz761krl19lxs-368786dc-e2b-prod-aws_1750015858749_na1fn_L2hvbWUvdWJ1bnR1L2NhYmxlX2VxdWF0aW9uX3ByZXNlbnRhdGlvbi9jYWJsZV9tYXA.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1767225600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMTNmRUNCQWdubDJSME5LMG9TRWlEVi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWY4ems2OXh6NzYxa3JsMTlseHMtMzY4Nzg2ZGMtZTJiLXByb2QtYXdzXzE3NTAwMTU4NTg3NDlfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTmhZbXhsWDJWeGRXRjBhVzl1WDNCeVpYTmxiblJoZEdsdmJpOWpZV0pzWlY5dFlYQS5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=kUX5OHohqTAYuUdpq9M-3m1m1AYGgaFEeSs~ArtHAGa1SE2G~C25C75P1b-CtihNV1YntFfI0hrtl8BpPWmHhtfhjbMoMlA81kWsSajN-CZ-2Ty1SetKpzH2wkDwboCVVf59N-4-2kPSzF4Jp-2TzogfS7lrpdtwZ576aF-aI8FvjDiPsusva16wUfoUmyykkHI5Hnge313raIQuBwT1~xX8pc90VSvOvY16fefOr9p-H5Nnt850ckE0U62PdVoVEyw62RRBQNaHh7tS611qGJKU1uiWqr56OFm9dws5vkl~AKiuPVNCn0FRGYujrboCI9GSSppu2sI6IYJo9fSCVQ__" 
+               alt="Cable Network Map" 
+               class="w-full h-48 object-cover rounded-lg shadow-md mb-3">
+          <p class="text-gray-600 text-xs text-center">
+            Historical map showing the submarine cable networks that 
+            benefited from theoretical advances in transmission line theory
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

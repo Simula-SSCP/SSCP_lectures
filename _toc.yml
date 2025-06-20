@@ -7,6 +7,6 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/L03_FEniCS_Darcy.ipynb"
 
-  - caption: FEniCS Electrophysiology
-    chapters:
-      - file: "L13 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
+  # - caption: FEniCS Electrophysiology
+  #   chapters:
+  #     - file: "L13 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"

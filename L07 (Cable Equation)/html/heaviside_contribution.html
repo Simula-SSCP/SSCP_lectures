@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .content-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+      }
+      .timeline-dot {
+        background: #10b981;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container flex p-16">
+      <!-- Left Column: Portrait and Info -->
+      <div class="w-96 pr-8">
+        <!-- Portrait -->
+        <div class="content-card rounded-2xl p-6 mb-6 shadow-lg text-center">
+          <img src="https://private-us-east-1.manuscdn.com/sessionFile/13fECBAgnl2R0NK0oSEiDV/sandbox/slides_resource_imf8zk69xz761krl19lxs-368786dc-e2b-prod-aws_1750015797704_na1fn_L2hvbWUvdWJ1bnR1L2NhYmxlX2VxdWF0aW9uX3ByZXNlbnRhdGlvbi9vbGl2ZXJfaGVhdmlzaWRl.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1767225600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMTNmRUNCQWdubDJSME5LMG9TRWlEVi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWY4ems2OXh6NzYxa3JsMTlseHMtMzY4Nzg2ZGMtZTJiLXByb2QtYXdzXzE3NTAwMTU3OTc3MDRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTmhZbXhsWDJWeGRXRjBhVzl1WDNCeVpYTmxiblJoZEdsdmJpOXZiR2wyWlhKZmFHVmhkbWx6YVdSbC5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=KkRiya7NXUpvNjASg6WtG9s2rQK0blttT1ILJ5yzkAymOFrGE2L23izVPGarXG3n7lUwVheQ0dVCye3ZHwa6fdd1fj3mtDzsXFd6n8ZgfzHZBi2DRdqCjKF-M~BKts8rNjiLWHu3rbDSY-3D6zs0kBRbEoJG4QVB~x7PjIr7ZRS9tSz0Hk771BLSSPhrNVFcHYbaGndhMVBJbDKDBbdlc0noOizm-3s5ubZ5V3KV1IL5xbJYRppo~gxfeed9nN-ddVs~ll5rpam6iUR2ejL6RpeVp5lKdhzqVunTKtue8yuRinaOQjqZrvoHJoqUgrfC-WSpEaFjn60DAVef452iSg__" 
+               alt="Oliver Heaviside" 
+               class="w-48 h-60 object-cover rounded-lg mx-auto mb-4 shadow-md">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Oliver Heaviside</h3>
+          <p class="text-gray-600 text-sm mb-2">Self-taught Physicist</p>
+          <p class="text-gray-700 text-sm">1850-1925</p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="content-card rounded-2xl p-6 shadow-lg">
+          <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <div class="timeline-dot w-4 h-4 rounded-full mr-3"></div>
+            Late 1870s
+          </h3>
+          <p class="text-gray-700 text-sm">
+            Heaviside began his work on transmission line theory, 
+            advancing our understanding of signal propagation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Main Content -->
+      <div class="flex-1">
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 class="text-5xl font-bold text-gray-800 mb-4">Heaviside's Contribution</h1>
+          <p class="text-xl text-gray-600">Advanced Transmission Line Theory</p>
+        </div>
+
+        <!-- Key Innovations -->
+        <div class="grid grid-cols-1 gap-6 mb-6">
+          <!-- Wave Propagation Concept -->
+          <div class="content-card rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="bg-blue-500 rounded-full p-3 mr-4 flex-shrink-0">
+                <i class="fas fa-wave-square text-white text-xl"></i>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Wave Propagation Theory</h2>
+                <p class="text-lg text-gray-700 mb-3">
+                  Introduced the concept that signals don't just diffuse but also 
+                  travel as waves along transmission lines.
+                </p>
+                <div class="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500">
+                  <p class="text-gray-700 text-sm">
+                    <strong>Key Insight:</strong> Combined diffusion and wave propagation effects 
+                    to create a more complete model of signal transmission.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced Understanding -->
+          <div class="content-card rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="bg-green-500 rounded-full p-3 mr-4 flex-shrink-0">
+                <i class="fas fa-brain text-white text-xl"></i>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Beyond Kelvin's Model</h2>
+                <p class="text-lg text-gray-700 mb-3">
+                  Advanced understanding by recognizing the dual nature of 
+                  signal propagation on transmission lines.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="bg-orange-50 rounded-lg p-3 text-center">
+                    <p class="text-sm font-semibold text-gray-800">Kelvin's Approach</p>
+                    <p class="text-xs text-gray-600">Diffusion Only</p>
+                  </div>
+                  <div class="bg-green-50 rounded-lg p-3 text-center">
+                    <p class="text-sm font-semibold text-gray-800">Heaviside's Approach</p>
+                    <p class="text-xs text-gray-600">Diffusion + Waves</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
