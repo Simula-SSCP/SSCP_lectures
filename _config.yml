@@ -51,7 +51,9 @@ sphinx:
   config:
     html_last_updated_fmt: "%b %d, %Y"
     suppress_warnings: ["mystnb.unknown_mime_type"]
-
+  extra_extensions:
+    - sphinx_exercise
+  
 exclude_patterns:
   - README.md
   - .pixi/*

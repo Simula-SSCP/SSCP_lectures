@@ -22,3 +22,18 @@ pre-commit run
 
 This will update the appropriate meta-data in the files (which in turn can be commited).
 If you have any questions or issues with this, please contact [Jørgen S. Dokken](https://github.com/jorgensd/) or make an [issue](https://github.com/Simula-SSCP/SSCP_2024_lectures/issues/new).
+
+
+# Installing the environment
+[Pixi](https://pixi.sh/dev/installation/) is used to manage dependencies.
+First install pixi (see above docs), 
+for instance by calling
+```bash
+curl -fsSL https://pixi.sh/install.sh | sh
+```
+then call
+```bash
+pixi install
+```
+
+You can run any dependency in the `pixi` environment with `pixi run ....`
