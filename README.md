@@ -31,9 +31,21 @@ for instance by calling
 ```bash
 curl -fsSL https://pixi.sh/install.sh | sh
 ```
+Pixi might ask you to modify your path, please do:
+For instance, 
+```bash
+export PATH=/root/.pixi/bin:$PATH
+```
 then call
 ```bash
 pixi install
 ```
+
+To build the book call
+```bash
+pixi run python3 -m jupyter book build  .
+```
+Go to [_build/html/index.html](_build/html/index.html)
+
 
 You can run any dependency in the `pixi` environment with `pixi run ....`
