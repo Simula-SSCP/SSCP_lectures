@@ -1,9 +1,9 @@
 [workspace]
-authors = ["Min RK <benjaminrk@simula.no>"]
-channels = ["conda-forge", "conda-forge/label/fenics-dev", "minrk"]
+authors = ["Henrik Finsberg <henriknf@simula.no>"]
+channels = ["conda-forge", "minrk", "finsberg"]
 name = "simula-summer-school"
 platforms = ["linux-64"]
-version = "2025"
+version = "2026"
 
 [tasks]
 
@@ -14,28 +14,25 @@ python = "3.12.*"
 conda = ">=25.3.1"
 mamba = ">=2.1.1"
 git = ">=2.49.0"
+pip = "*"
 
 # scientific packages
 mpich = ">=4"
-fenics-dolfinx = "0.9.*"
+fenics-dolfinx = "0.10.*"
 
-fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
-# specify pacakges from fenics-dev channel
-fenics-dolfin = { channel = "conda-forge/label/fenics-dev" }
-fenics-libdolfin = { channel = "conda-forge/label/fenics-dev" }
-fenics-ffc = { channel = "conda-forge/label/fenics-dev" }
-fenics-fiat = { channel = "conda-forge/label/fenics-dev" }
 
 sympy = "<1.14"
-neuron = ">=8.2.4"
+
 lfpy = ">=2.3.2"
 python-neo = ">=0.14.1"
 browndye = ">=2023.12.29"
 brian2 = ">=2.8.0.4"
 
 # packaged in this repo:
-opencarp = { version = "18.0.*", channel = "minrk" }
-carputils = { version = "18.0.*", channel = "minrk" }
+opencarp = { version = "19.0.*", channel = "finsberg" }
+carputils = { version = "19.0.*", channel = "finsberg" }
+neuron = { version = "8.2.4", channel = "finsberg" }
+
 
 # basic Python
 black = ">=25.1.0"
@@ -55,7 +52,6 @@ wurlitzer = ">=3.1.1"
 tqdm = ">=4.67.1"
 
 # Jupyter
-sphinx-exercise = ">=1.0.0"
 jupyterlab = "4.*"
 jupyterhub-base = "==5.3.0"
 jupyter-resource-usage = ">=1.1.1"
@@ -68,4 +64,3 @@ ipywidgets = ">=8.1.7"
 nbgitpuller = ">=1.2.2"
 binutils = ">=2.43"
 jupyter-book = ">=1.0.4.post1"
-jupytext = ">=1.17.3,<2"
