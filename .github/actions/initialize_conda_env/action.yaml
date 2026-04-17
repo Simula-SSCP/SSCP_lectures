@@ -13,9 +13,9 @@ runs:
     # cache ref https://github.com/conda-incubator/setup-miniconda#caching-packages
 
     - name: Setup conda env
-      uses: prefix-dev/setup-pixi@v0.8.10
+      uses: prefix-dev/setup-pixi@v0.9.4
       with:
-        pixi-version: v0.44.0
+        pixi-version: v0.67.0
         # building cache is slower than not caching
         cache: false
 
