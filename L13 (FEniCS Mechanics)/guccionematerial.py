@@ -1,11 +1,20 @@
-from fenics import *
+from ufl import (
+    Identity,
+    det,
+    inner,
+    ln,
+    exp
+)
+import dolfinx
 
 class GuccioneMaterial:
 
-    def __init__(self, **params) :
+    def __init__(self, mesh, **params) :
+        self._mesh = mesh
         params = params or {}
         self._parameters = self.default_parameters()
         self._parameters.update(params)
+        
 
     @staticmethod
     def default_parameters() :
@@ -44,15 +53,15 @@ class GuccioneMaterial:
         C = pow(J, -float(2)/3) * F.T*F
         E = 0.5*(C - I)
 
-        CC  = Constant(params['C'], name='C')
+        CC  = dolfinx.fem.Constant(self._mesh, params['C'])
         if self.is_isotropic() :
             # isotropic case
             Q = inner(E, E)
         else :
             # fully anisotropic
-            bt  = Constant(params['bt'], name='bt')
-            bf  = Constant(params['bf'], name='bf')
-            bfs = Constant(params['bfs'], name='bfs')
+            bt  = dolfinx.fem.Constant(self._mesh, params['bt'])
+            bf  = dolfinx.fem.Constant(self._mesh, params['bf'])
+            bfs = dolfinx.fem.Constant(self._mesh, params['bfs'])
 
             e1 = params['e1']
             e2 = params['e2']
@@ -70,7 +79,7 @@ class GuccioneMaterial:
 
         # active strain energy
         if params['Tactive'] is not None :
-            self.Tactive = Constant(params['Tactive'], name='Tactive')
+            self.Tactive = dolfinx.fem.Constant(self._mesh, params['Tactive'])
             I4 = inner(C*e1, e1)
             Wactive = self.Tactive/2.0 * (I4 - 1)
         else :
@@ -78,7 +87,7 @@ class GuccioneMaterial:
 
         # incompressibility
         if params['kappa'] is not None :
-            kappa = Constant(params['kappa'], name='kappa')
+            kappa = dolfinx.fem.Constant(self._mesh, params['kappa'])
             Winc = kappa * (J*ln(J) -J +1) 
         else :
             Winc = - p * (J - 1)
@@ -86,7 +95,7 @@ class GuccioneMaterial:
         return Wpassive + Wactive + Winc
 
     def set_active_stress(self, value) :
-        self.Tactive.assign(value)
+        self.Tactive.value = value
 
     def get_active_stress(self) :
-        return float(self.Tactive)
+        return float(self.Tactive.value)
