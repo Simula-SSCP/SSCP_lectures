@@ -50,6 +50,7 @@ pytorch-cpu = ">=2.6.0"
 pytest = ">=8.3.5"
 wurlitzer = ">=3.1.1"
 tqdm = ">=4.67.1"
+ipympl = ">=0.10.0"
 
 # Jupyter
 sphinx-exercise = ">=1.0.0"
@@ -67,3 +68,4 @@ binutils = ">=2.43"
 jupyter-book = ">=1.0.4.post1,<2"
 jupytext = ">=1.17.3,<2"
 sphinx-codeautolink = ">=0.18.1"
+pre-commit = ">=4.6.0,<5"
