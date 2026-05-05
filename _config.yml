@@ -53,12 +53,12 @@ sphinx:
   config:
     html_last_updated_fmt: "%b %d, %Y"
     suppress_warnings: ["mystnb.unknown_mime_type"]
+    codeautolink_concat_default: True
 
     # To avoid warning about default changing due to
     # https://github.com/pydata/pydata-sphinx-theme/issues/1492
     # html_theme_options:
     #   navigation_with_keys: false
-    codeautolink_concat_default: True
     intersphinx_mapping:
       basix: ["https://docs.fenicsproject.org/basix/main/python/", null]
       ffcx: ["https://docs.fenicsproject.org/ffcx/main/", null]
@@ -74,9 +74,12 @@ sphinx:
   extra_extensions:
     - "sphinx.ext.autodoc"
     - "sphinx.ext.intersphinx"
-    - "sphinx_codeautolink"
     - "sphinx_exercise"
-  
+    - "sphinx_codeautolink"
+
+  local_extensions:
+    fix_autolink: .
+
 exclude_patterns:
   - README.md
   - .pixi/*
