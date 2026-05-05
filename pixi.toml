@@ -17,7 +17,7 @@ git = ">=2.49.0"
 
 # scientific packages
 mpich = ">=4"
-fenics-dolfinx = "0.9.*"
+fenics-dolfinx = "0.10.*"
 
 fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
 # specify pacakges from fenics-dev channel
@@ -67,5 +67,6 @@ ipykernel = ">=6.29.5"
 ipywidgets = ">=8.1.7"
 nbgitpuller = ">=1.2.2"
 binutils = ">=2.43"
-jupyter-book = ">=1.0.4.post1"
+jupyter-book = ">=1.0.4.post1,<2"
 jupytext = ">=1.17.3,<2"
+sphinx-codeautolink = ">=0.17.0"
