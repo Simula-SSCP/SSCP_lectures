@@ -57,8 +57,7 @@ for t in time_steps:
     ax.plot(dof_coords, uh.x.array)
 
     # update the old solution to the new one for next time step
-    uh_old.x.array[:] = uh.x.array
-    uh_old.x.scatter_forward()
+    uh_old.interpolate(uh)
 
 ax.legend([f"t = {t}" for t in time_steps], ncols=2, loc='lower right')
 print("steps = ", [f"t = {t}" for t in time_steps])

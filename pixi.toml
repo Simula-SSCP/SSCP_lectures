@@ -19,12 +19,20 @@ git = ">=2.49.0"
 mpich = ">=4"
 fenics-dolfinx = "0.10.*"
 
-fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
+# visualization
+pyvista = ">=0.47"
+trame = ">=3.10.0"
+vtk = ">=9.5.0"
+trame-vtk= "<2.10.3"
+trame-vuetify= ">=3.0.0"
+nest-asyncio2 = ">=1.6.1"
+
+#fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
 # specify pacakges from fenics-dev channel
-fenics-dolfin = { channel = "conda-forge/label/fenics-dev" }
-fenics-libdolfin = { channel = "conda-forge/label/fenics-dev" }
-fenics-ffc = { channel = "conda-forge/label/fenics-dev" }
-fenics-fiat = { channel = "conda-forge/label/fenics-dev" }
+#fenics-dolfin = { channel = "conda-forge/label/fenics-dev" }
+#fenics-libdolfin = { channel = "conda-forge/label/fenics-dev" }
+#fenics-ffc = { channel = "conda-forge/label/fenics-dev" }
+#fenics-fiat = { channel = "conda-forge/label/fenics-dev" }
 
 sympy = "<1.14"
 python-neo = ">=0.14.1"
@@ -69,3 +77,9 @@ jupyter-book = ">=1.0.4.post1,<2"
 jupytext = ">=1.17.3,<2"
 sphinx-codeautolink = ">=0.18.1"
 pre-commit = ">=4.6.0,<5"
+
+
+[activation.env]
+PYVISTA_JUPYTER_BACKEND="html"
+PYVISTA_OFF_SCREEN="False"
+VTK_DEFAULT_OPENGL_WINDOW = "vtkEGLRenderWindow"

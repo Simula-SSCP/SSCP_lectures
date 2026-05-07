@@ -6,7 +6,6 @@ parts:
       - file: "L12 (FEniCS Intro)/L01_FEM_intro.ipynb"
       - file: "L12 (FEniCS Intro)/L02_FEniCS_intro.ipynb"
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
-      - file: "L12 (FEniCS Intro)/L03_FEniCS_Darcy.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
   - caption: Other SSCP_lectures
     chapters:
