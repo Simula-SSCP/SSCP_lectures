@@ -7,6 +7,12 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/L03_FEniCS_Darcy.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
+  - caption: L13 FEniCS mechanics
+    chapters:
+      - file: "L13 (FEniCS Mechanics)/L13_passive_cube.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_active_cube.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_ellipsoid.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_solutions.ipynb"
   - caption: Other SSCP_lectures
     chapters:
       - file: "L00 (Python Tutorial)/L1 - Intro to Python for Scientific Computing"
