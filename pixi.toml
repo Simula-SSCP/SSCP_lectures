@@ -1,6 +1,6 @@
 [workspace]
 authors = ["Henrik Finsberg <henriknf@simula.no>"]
-channels = ["conda-forge", "minrk", "finsberg"]
+channels = ["conda-forge"]
 name = "simula-summer-school"
 platforms = ["linux-64"]
 version = "2026"
@@ -19,19 +19,25 @@ pip = "*"
 # scientific packages
 mpich = ">=4"
 fenics-dolfinx = "0.10.*"
-
-
 sympy = "<1.14"
 
 lfpy = ">=2.3.2"
 python-neo = ">=0.14.1"
 browndye = ">=2023.12.29"
 brian2 = ">=2.8.0.4"
+io4dolfinx = ">=1.2.0,<2"
+scifem = ">=0.18.1,<0.19"
+pyvista = ">=0.48.4,<0.49"
+imageio = ">=2.37.0,<3"
+trame = ">=3.13.2,<4"
+trame-vtk = ">=2.11.8,<3"
+trame-vuetify = ">=3.2.2,<4"
+
 
 # packaged in this repo:
-opencarp = { version = "19.0.*", channel = "finsberg" }
-carputils = { version = "19.0.*", channel = "finsberg" }
-neuron = { version = "8.2.4", channel = "finsberg" }
+opencarp = ">=19.0.0"
+carputils = ">=19.0.0"
+
 
 
 # basic Python
@@ -63,6 +69,4 @@ ipykernel = ">=6.29.5"
 ipywidgets = ">=8.1.7"
 nbgitpuller = ">=1.2.2"
 binutils = ">=2.43"
-jupyter-book = ">=1.0.4.post1,<2"
-sphinx-exercise = ">=1.0.0"
-jupytext = ">=1.17.3,<2"
+jupyter-book = ">=1.0.4.post1"
