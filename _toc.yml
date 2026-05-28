@@ -1,16 +1,227 @@
 format: jb-book
-root: index.rst
-parts:
-  - caption: The finite element method (FEM)
-    chapters:
-      - file: "L12 (FEniCS Intro)/L01_FEM_intro.ipynb"
-      - file: "L12 (FEniCS Intro)/L02_FEniCS_intro.ipynb"
-      - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
-      - file: "L12 (FEniCS Intro)/solutions.ipynb"
-  - caption: Other SSCP_lectures
-    chapters:
-      - file: "L00 (Python Tutorial)/L1 - Intro to Python for Scientific Computing"
+root: course_intro/index
 
-  # - caption: FEniCS Electrophysiology
+parts:
+  - caption: Course Introduction
+    numbered: false
+    chapters:
+      - file: course_intro/0.0_about
+        sections:
+          - file: course_intro/0.1_structure
+          - file: course_intro/0.2_howto
+          - file: course_intro/0.3_acknowledgments
+
+  - caption: Physical Chemistry and Electrochemistry
+    numbered: 1
+    chapters:
+      # CHAPTER 1: Lecture introduction
+      - file: "L02 (Physical Chemistry)/book/1.0_lecture_overview"
+
+      # CHAPTER 2: Fundamentals of chemical kinetics
+      - file: "L02 (Physical Chemistry)/book/2.0_kinetics_overview"
+        sections:
+          - file: "L02 (Physical Chemistry)/book/2.1_mass_action"
+          - file: "L02 (Physical Chemistry)/book/2.2_example_mass_action"
+          - file: "L02 (Physical Chemistry)/book/2.3_equilibrium"
+          - file: "L02 (Physical Chemistry)/book/2.4_exercise_equilibrium"
+
+      # CHAPTER 3: Ligand binding and cooperativity
+      - file: "L02 (Physical Chemistry)/book/3.0_binding_overview"
+        sections:
+          - file: "L02 (Physical Chemistry)/book/3.1_fractional_binding"
+          - file: "L02 (Physical Chemistry)/book/3.2_hill_equation"
+
+      # CHAPTER 4: Thermodynamics and transport
+      - file: "L02 (Physical Chemistry)/book/4.0_thermo_overview"
+        sections:
+          - file: "L02 (Physical Chemistry)/book/4.1_thermodynamics"
+          - file: "L02 (Physical Chemistry)/book/4.2_diffusion"
+
+      # CHAPTER 5: Enzyme kinetics
+      - file: "L02 (Physical Chemistry)/book/5.0_enzymes_overview"
+        sections:
+          - file: "L02 (Physical Chemistry)/book/5.1_enzyme_kinetics"
+          - file: "L02 (Physical Chemistry)/book/5.2_michaelis_menten"
+          - file: "L02 (Physical Chemistry)/book/5.3_exercise_enzymes"
+
+  # - caption: Mass Transport and Membrane Biophysics
+  #   numbered: 1
   #   chapters:
-  #     - file: "L13 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
+  #     - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.0_cell_membrane"
+  #       sections:
+  #         - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.1_nernst_and_currents"
+  #         - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.2_exercises"
+
+  # - caption: Ion Channel Gating
+  #   numbered: true
+  #   chapters:
+  #     - file: "L04 (Ion Channel Gating)/ch_3.0_ion_channel_gating"
+  #       sections:
+  #         - file: "L04 (Ion Channel Gating)/ch_3.1_exercises"
+  #         - file: "L04 (Ion Channel Gating)/ch_3.2_exercises_stochastic"
+
+  # - caption: Building Modern Ion Channel Models
+  #   numbered: true
+  #   chapters:
+  #     - file: "L05 (Building Ion Channel Models)/ch_4.0_ion_channel_models"
+  #       sections:
+  #         - file: "L05 (Building Ion Channel Models)/E5/ch_4.1_data_example"
+  #         - file: "L05 (Building Ion Channel Models)/E5/ch_4.2_exercises"
+
+  # - caption: Combining Ion Transporter Models to Simulate the Action Potential
+  #   numbered: true
+  #   chapters:
+  #     - file: "L06 (Simulating Action Potentials)/ch_5.0_action_potential"
+  #       sections:
+  #         - file: "L06 (Simulating Action Potentials)/E6/ch_5.1_exercises"
+
+  # - caption: Electrical Conduction in Biology
+  #   numbered: true
+  #   chapters:
+  #     - file: "L07 (Cable Equation)/ch_6.0_cable_equation_derivation"
+  #       sections:
+  #         - file: "L07 (Cable Equation)/ch_6.1_cable_equation_biology"
+  #         - file: "L07 (Cable Equation)/ch_6.2_fitzhugh_nagumo"
+
+  # - caption: Modelling Electrical Conduction in Cardiac Tissue
+  #   numbered: true
+  #   chapters:
+  #     - file: "L08 (Electrical Conduction in the Heart)/ch_7.0_cardiac_conduction"
+  #       sections:
+  #         - file: "L08 (Electrical Conduction in the Heart)/ch_7.1_exercises"
+
+  # - caption: Quantitative Aspects of Calcium Handling
+  #   numbered: true
+  #   chapters:
+  #     - file: "L09 (Calcium Handling)/ch_8.0_calcium_ecc"
+  #       sections:
+  #         - file: "L09 (Calcium Handling)/ch_8.1_serca"
+  #         - file: "L09 (Calcium Handling)/ch_8.2_ncx"
+  #         - file: "L09 (Calcium Handling)/ch_8.3_exercises"
+
+  # - caption: Fundamental Cardiac Mechanics
+  #   numbered: true
+  #   chapters:
+  #     - file: "L10 (Cardiac Mechanics)/ch_9.0_placeholder"
+
+  # - caption: Myofilament Dynamics
+  #   numbered: true
+  #   chapters:
+  #     - file: "L11 (Myofilament Dynamics)/ch_10.0_myofilament_intro"
+  #       sections:
+  #         - file: "L11 (Myofilament Dynamics)/ch_10.1_crossbridge_model"
+  #         - file: "L11 (Myofilament Dynamics)/ch_10.2_cooperative_mechanisms"
+  #         - file: "L11 (Myofilament Dynamics)/ch_10.3_rice_model"
+
+  # - caption: The Finite Element Method
+  #   numbered: true
+  #   chapters:
+  #     - file: "L12 (FEniCS Intro)/ch_11.0_fem_intro"
+  #       sections:
+  #         - file: "L12 (FEniCS Intro)/ch_11.1_fenics_intro"
+  #         - file: "L12 (FEniCS Intro)/ch_11.2_fenics_diffusion"
+
+  # - caption: Mechanics Applications in FEniCS
+  #   numbered: true
+  #   chapters:
+  #     - file: "L13 (FEniCS Mechanics)/ch_12.0_continuum_mechanics"
+  #       sections:
+  #         - file: "L13 (FEniCS Mechanics)/ch_12.1_passive_cube"
+  #         - file: "L13 (FEniCS Mechanics)/ch_12.2_active_cube"
+  #         - file: "L13 (FEniCS Mechanics)/ch_12.3_ellipsoid"
+
+  # - caption: EMI 101
+  #   numbered: true
+  #   chapters:
+  #     - file: "L15 (EMI)/ch_13.0_emi_foundations"
+  #       sections:
+  #         - file: "L15 (EMI)/ch_13.1_emi_implementation"
+
+  - caption: Python Tutorial
+    numbered: false
+    chapters:
+      # Tutorial landing page
+      - file: "L00 (Python Tutorial)/book/py_tut_0.0_overview"
+
+      # Tutorial ch. 1: Setup and Jupyter basics
+      - file: "L00 (Python Tutorial)/book/py_tut_1.0_setup_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_1.1_installing"
+          - file: "L00 (Python Tutorial)/book/py_tut_1.2_jupyter"
+
+      # Tutorial ch. 2: Python fundamentals
+      - file: "L00 (Python Tutorial)/book/py_tut_2.0_fundamentals_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_2.1_hello_world"
+          - file: "L00 (Python Tutorial)/book/py_tut_2.2_variables_types"
+
+      # Tutorial ch. 3: Control flow and data structures
+      - file: "L00 (Python Tutorial)/book/py_tut_3.0_control_flow_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_3.1_if_tests"
+          - file: "L00 (Python Tutorial)/book/py_tut_3.2_while_loops"
+          - file: "L00 (Python Tutorial)/book/py_tut_3.3_lists"
+          - file: "L00 (Python Tutorial)/book/py_tut_3.4_for_loops"
+
+      # Tutorial ch. 4: Functions and plotting
+      - file: "L00 (Python Tutorial)/book/py_tut_4.0_functions_plotting_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_4.1_plotting"
+          - file: "L00 (Python Tutorial)/book/py_tut_4.2_functions"
+
+      # Tutorial ch. 5: Solving ODEs numerically
+      - file: "L00 (Python Tutorial)/book/py_tut_5.0_odes_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_5.1_forward_euler"
+          - file: "L00 (Python Tutorial)/book/py_tut_5.2_solve_ivp"
+
+      # Tutorial ch. 6: Practice exercises
+      - file: "L00 (Python Tutorial)/book/py_tut_6.0_exercises_overview"
+        sections:
+          - file: "L00 (Python Tutorial)/book/py_tut_6.1_exercise_1"
+          - file: "L00 (Python Tutorial)/book/py_tut_6.2_exercise_2"
+          - file: "L00 (Python Tutorial)/book/py_tut_6.3_exercise_3"
+          - file: "L00 (Python Tutorial)/book/py_tut_6.4_exercise_4"
+          - file: "L00 (Python Tutorial)/book/py_tut_6.5_exercise_5"
+          - file: "L00 (Python Tutorial)/book/py_tut_6.6_exercise_6"
+
+  - caption: Solutions
+    numbered: false
+    chapters:
+      - file: course_intro/app_solutions_intro
+
+      # Solutions for Physical Chemistry and Electrochemistry
+      - file: "L02 (Physical Chemistry)/book/ex_sol_physchem_landing"
+        sections:
+          - file: "L02 (Physical Chemistry)/book/ex_2.1a_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_2.1b_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_2.1c_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_2.1d_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_2.1e_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1a_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1b_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1c_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1d_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1e_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1f_sol"
+          - file: "L02 (Physical Chemistry)/book/ex_5.1g_sol"
+
+      # Solutions for Python Tutorial
+      - file: "L00 (Python Tutorial)/book/ex_sol_py_tut_landing"
+        sections:
+          - file: "L00 (Python Tutorial)/book/ex_1a_sol"
+          - file: "L00 (Python Tutorial)/book/ex_1b_sol"
+          - file: "L00 (Python Tutorial)/book/ex_1c_sol"
+          - file: "L00 (Python Tutorial)/book/ex_2a_sol"
+          - file: "L00 (Python Tutorial)/book/ex_2b_sol"
+          - file: "L00 (Python Tutorial)/book/ex_2c_sol"
+          - file: "L00 (Python Tutorial)/book/ex_3a_sol"
+          - file: "L00 (Python Tutorial)/book/ex_3b_sol"
+          - file: "L00 (Python Tutorial)/book/ex_4a_sol"
+          - file: "L00 (Python Tutorial)/book/ex_4b_sol"
+          - file: "L00 (Python Tutorial)/book/ex_4c_sol"
+          - file: "L00 (Python Tutorial)/book/ex_4d_sol"
+          - file: "L00 (Python Tutorial)/book/ex_4e_sol"
+          - file: "L00 (Python Tutorial)/book/ex_5_sol"
+          - file: "L00 (Python Tutorial)/book/ex_6a_sol"
+          - file: "L00 (Python Tutorial)/book/ex_6b_sol"
