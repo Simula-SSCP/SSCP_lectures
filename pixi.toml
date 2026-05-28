@@ -2,7 +2,7 @@
 authors = ["Min RK <benjaminrk@simula.no>"]
 channels = ["conda-forge", "conda-forge/label/fenics-dev", "minrk"]
 name = "simula-summer-school"
-platforms = ["linux-64", "linux-aarch64"]
+platforms = ["linux-64", "linux-aarch64", "osx-arm64"]
 version = "2025"
 
 [tasks]
