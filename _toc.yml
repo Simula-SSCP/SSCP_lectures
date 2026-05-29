@@ -44,13 +44,31 @@ parts:
           - file: "L02 (Physical Chemistry)/book/5.2_michaelis_menten"
           - file: "L02 (Physical Chemistry)/book/5.3_exercise_enzymes"
 
-  # - caption: Mass Transport and Membrane Biophysics
-  #   numbered: 1
-  #   chapters:
-  #     - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.0_cell_membrane"
-  #       sections:
-  #         - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.1_nernst_and_currents"
-  #         - file: "L03 (The Cell Membrane and Mass Transport)/ch_2.2_exercises"
+  - caption: Mass Transport and Membrane Biophysics
+    numbered: 1
+    chapters:
+      # CHAPTER 6: Lecture introduction
+      - file: "L03 (The Cell Membrane and Mass Transport)/book/6.0_lecture_overview"
+
+      # CHAPTER 7: The cell membrane and capacitance
+      - file: "L03 (The Cell Membrane and Mass Transport)/book/7.0_membrane_overview"
+        sections:
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/7.1_cell_membrane"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/7.2_exercise_membrane_thickness"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/7.3_capacitor"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/7.4_exercise_voltage_clamp"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/7.5_ion_channels"
+
+      # CHAPTER 8: Electrodiffusion and currents
+      - file: "L03 (The Cell Membrane and Mass Transport)/book/8.0_currents_overview"
+        sections:
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.1_electrodiffusion"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.2_nernst_potential"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.3_exercise_nernst_potential"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.4_transmembrane_currents"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.5_exercise_equilibrium_potential"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.6_toward_gating"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/8.7_exercise_simple_ap_model"
 
   # - caption: Ion Channel Gating
   #   numbered: true
@@ -205,6 +223,31 @@ parts:
           - file: "L02 (Physical Chemistry)/book/ex_5.1e_sol"
           - file: "L02 (Physical Chemistry)/book/ex_5.1f_sol"
           - file: "L02 (Physical Chemistry)/book/ex_5.1g_sol"
+
+      # Solutions for Mass Transport and Membrane Biophysics
+      - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_sol_membrane_biophys_landing"
+        sections:
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.1_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.2a_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.2b_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.2c_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.2d_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_7.2e_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1a_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1b_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1c_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1d_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1e_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1f_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.1g_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2a_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2b_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2c_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2d_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2e_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2f_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.3a_sol"
+          - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.3b_sol"
 
       # Solutions for Python Tutorial
       - file: "L00 (Python Tutorial)/book/ex_sol_py_tut_landing"
