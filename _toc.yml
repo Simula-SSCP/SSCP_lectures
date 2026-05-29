@@ -7,10 +7,11 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/L03_FEniCS_Darcy.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
+
+  - caption: FEniCS Electrophysiology
+    chapters:
+      - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
+
   - caption: Other SSCP_lectures
     chapters:
       - file: "L00 (Python Tutorial)/L1 - Intro to Python for Scientific Computing"
-
-  # - caption: FEniCS Electrophysiology
-  #   chapters:
-  #     - file: "L13 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
