@@ -29,7 +29,7 @@ class GuccioneMaterial:
         Return True if the material is isotropic.
         """
         p = self._parameters
-        return p["bt"] == 1.0 and p["bf"] == 1.0 and p["bfs"] == 1.0
+        return np.isclose(p['bt'], 1.0) and np.isclose(p['bf'], 1.0) and np.isclose(p['bfs'], 1.0)
 
     def is_incompressible(self):
         """
