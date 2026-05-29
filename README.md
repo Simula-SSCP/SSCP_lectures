@@ -49,3 +49,14 @@ Go to [_build/html/index.html](_build/html/index.html)
 
 
 You can run any dependency in the `pixi` environment with `pixi run ....`
+
+## Installation on a clean ubuntu machine (for instance a ubuntu:26.04 docker image)
+
+```bash
+apt-get update
+apt-get install -y curl
+curl -fsSL https://pixi.sh/install.sh | sh
+export PIXI_BIN=$(pwd)/.pixi/bin
+echo "export PATH=${PIXI_BIN}:${PATH}" >> ~/.bashrc
+exec bash
+```
