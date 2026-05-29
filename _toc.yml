@@ -8,7 +8,7 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
-- caption: L13 FEniCS mechanics
+  - caption: L13 FEniCS mechanics
     chapters:
       - file: "L13 (FEniCS Mechanics)/L13_passive_cube.ipynb"
       - file: "L13 (FEniCS Mechanics)/L13_active_cube.ipynb"
