@@ -1,3 +1,4 @@
+import numpy as np
 from ufl import Identity, det, inner, ln, exp
 import dolfinx
 
