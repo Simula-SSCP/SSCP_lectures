@@ -18,6 +18,8 @@ git = ">=2.49.0"
 # scientific packages
 mpich = ">=4"
 fenics-dolfinx = "0.10.*"
+scifem = ">=0.19.0"
+io4dolfinx = ">=1.2.0"
 
 # visualization
 pyvista = ">=0.47"
@@ -26,6 +28,7 @@ vtk = ">=9.5.0"
 trame-vtk= "<2.10.3"
 trame-vuetify= ">=3.0.0"
 nest-asyncio2 = ">=1.6.1"
+imageio = ">=2.37.0"
 
 #fenics = { version = "2019.2.0.*", channel = "conda-forge/label/fenics-dev" }
 # specify pacakges from fenics-dev channel

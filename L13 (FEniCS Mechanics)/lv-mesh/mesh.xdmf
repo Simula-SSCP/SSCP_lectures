@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="Mesh" GridType="Uniform">
+      <Topology TopologyType="Tetrahedron" NumberOfElements="530" NodesPerElement="4">
+        <DataItem Dimensions="530 4" NumberType="Int" Format="HDF">mesh.h5:/Mesh/Mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XYZ">
+        <DataItem Dimensions="149 3" Format="HDF">mesh.h5:/Mesh/Mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Cell tags" GridType="Uniform">
+      <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@Name='Mesh']/Geometry)" />
+      <Topology TopologyType="Tetrahedron" NumberOfElements="530" NodesPerElement="4">
+        <DataItem Dimensions="530 4" NumberType="Int" Format="HDF">mesh.h5:/MeshTags/Cell tags/topology</DataItem>
+      </Topology>
+      <Attribute Name="Cell tags" AttributeType="Scalar" Center="Cell">
+        <DataItem Dimensions="530 1" Format="HDF">mesh.h5:/MeshTags/Cell tags/Values</DataItem>
+      </Attribute>
+    </Grid>
+    <Grid Name="Facet tags" GridType="Uniform">
+      <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@Name='Mesh']/Geometry)" />
+      <Topology TopologyType="Triangle" NumberOfElements="192" NodesPerElement="3">
+        <DataItem Dimensions="192 3" NumberType="Int" Format="HDF">mesh.h5:/MeshTags/Facet tags/topology</DataItem>
+      </Topology>
+      <Attribute Name="Facet tags" AttributeType="Scalar" Center="Cell">
+        <DataItem Dimensions="192 1" Format="HDF">mesh.h5:/MeshTags/Facet tags/Values</DataItem>
+      </Attribute>
+    </Grid>
+    <Grid Name="Edge tags" GridType="Uniform">
+      <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@Name='Mesh']/Geometry)" />
+      <Topology TopologyType="PolyLine" NumberOfElements="33" NodesPerElement="2">
+        <DataItem Dimensions="33 2" NumberType="Int" Format="HDF">mesh.h5:/MeshTags/Edge tags/topology</DataItem>
+      </Topology>
+      <Attribute Name="Edge tags" AttributeType="Scalar" Center="Cell">
+        <DataItem Dimensions="33 1" Format="HDF">mesh.h5:/MeshTags/Edge tags/Values</DataItem>
+      </Attribute>
+    </Grid>
+    <Grid Name="Vertex tags" GridType="Uniform">
+      <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@Name='Mesh']/Geometry)" />
+      <Topology TopologyType="PolyVertex" NumberOfElements="2" NodesPerElement="1">
+        <DataItem Dimensions="2 1" NumberType="Int" Format="HDF">mesh.h5:/MeshTags/Vertex tags/topology</DataItem>
+      </Topology>
+      <Attribute Name="Vertex tags" AttributeType="Scalar" Center="Cell">
+        <DataItem Dimensions="2 1" Format="HDF">mesh.h5:/MeshTags/Vertex tags/Values</DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>
