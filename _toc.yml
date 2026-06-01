@@ -19,6 +19,10 @@ parts:
     chapters:
       - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
 
+  - caption: L15 The EMI model
+    chapters:
+      - file: "L15 (EMI model)/L15_EMI_single_cell.ipynb"
+
   - caption: Other SSCP_lectures
     chapters:
       - file: "L00 (Python Tutorial)/L1 - Intro to Python for Scientific Computing"
