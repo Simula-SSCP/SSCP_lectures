@@ -2,8 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Simula Summer School in Computational Physiology
-author: Jørgen S. Dokken
-logo: logo.png
+author: SSCP Instructors
+logo: "logos/sscp_logo.png"
+copyright: "2026"
+only_build_toc_files: true
 
 # Cache execution of notebooks
 
@@ -11,20 +13,24 @@ logo: logo.png
 execute:
   exclude_patterns:
     - .pixi/*
-  execute_notebooks: cache
+  execute_notebooks: "off"
   timeout: 1800
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/Simula-SSCP/SSCP_lectures  # Online location of your book
-  path_to_book: .  # Optional path to your book, relative to the repository root
+  url: https://github.com/Simula-SSCP/SSCP_lectures # Online location of your book
+  path_to_book: . # Optional path to your book, relative to the repository root
   branch: main # Which branch of the repository should be used when creating links (optional)
 
 launch_buttons:
   notebook_interface: "jupyterlab"
-  binderhub_url: "https://mybinder.org"
+  jupyterhub_url: https://sscp.simula.no
+  #binderhub_url: "https://mybinder.org"
 
 html:
+  favicon: "logos/favicon.ico"
+  home_page_in_navbar: true
+  #use_multitoc_numbering: true
   use_issues_button: true
   use_repository_button: true
 
@@ -32,7 +38,7 @@ html:
     <div>
         This webpage is distributed under the terms of the <a href=https://choosealicense.com/licenses/mit/>MIT License</a>.
         If you use this work, please cite it appropriately.
-    </div
+    </div>
 
 parse:
   myst_enable_extensions:
@@ -46,6 +52,7 @@ parse:
     - "replacements"
     - "smartquotes"
     - "substitution"
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
 
 bibtex_bibfiles:
   - references.bib
@@ -55,6 +62,9 @@ sphinx:
     html_last_updated_fmt: "%b %d, %Y"
     suppress_warnings: ["mystnb.unknown_mime_type"]
     codeautolink_concat_default: True
+
+    html_context:
+      default_mode: "light"
 
     # To avoid warning about default changing due to
     # https://github.com/pydata/pydata-sphinx-theme/issues/1492
@@ -76,7 +86,8 @@ sphinx:
     - "sphinx.ext.autodoc"
     - "sphinx.ext.intersphinx"
     - "sphinx_exercise"
-    - "sphinx_codeautolink"
+    #- "sphinx_codeautolink"
+    #- "sphinx_multitoc_numbering"
 
   local_extensions:
     fix_autolink: .
@@ -84,4 +95,3 @@ sphinx:
 exclude_patterns:
   - README.md
   - .pixi/*
-only_build_toc_files: true

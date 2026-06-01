@@ -18,4 +18,3 @@ runs:
         pixi-version: latest
         # building cache is slower than not caching
         cache: false
-

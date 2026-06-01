@@ -1,5 +1,7 @@
 # general files
 .DS_Store
+TODO.md
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
