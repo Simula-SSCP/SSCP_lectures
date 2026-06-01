@@ -168,22 +168,23 @@ parts:
   #         - file: "L11 (Myofilament Dynamics)/ch_10.2_cooperative_mechanisms"
   #         - file: "L11 (Myofilament Dynamics)/ch_10.3_rice_model"
 
-  # - caption: The Finite Element Method
-  #   numbered: true
-  #   chapters:
-  #     - file: "L12 (FEniCS Intro)/ch_11.0_fem_intro"
-  #       sections:
-  #         - file: "L12 (FEniCS Intro)/ch_11.1_fenics_intro"
-  #         - file: "L12 (FEniCS Intro)/ch_11.2_fenics_diffusion"
+  - caption: The finite element method (FEM)
+    chapters:
+      - file: "L12 (FEniCS Intro)/L01_FEM_intro.ipynb"
+      - file: "L12 (FEniCS Intro)/L02_FEniCS_intro.ipynb"
+      - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
+      - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
-  # - caption: Mechanics Applications in FEniCS
-  #   numbered: true
-  #   chapters:
-  #     - file: "L13 (FEniCS Mechanics)/ch_12.0_continuum_mechanics"
-  #       sections:
-  #         - file: "L13 (FEniCS Mechanics)/ch_12.1_passive_cube"
-  #         - file: "L13 (FEniCS Mechanics)/ch_12.2_active_cube"
-  #         - file: "L13 (FEniCS Mechanics)/ch_12.3_ellipsoid"
+  - caption: FEniCS mechanics
+    chapters:
+      - file: "L13 (FEniCS Mechanics)/L13_passive_cube.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_active_cube.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_ellipsoid.ipynb"
+      - file: "L13 (FEniCS Mechanics)/L13_solutions.ipynb"
+
+  - caption: FEniCS Electrophysiology
+    chapters:
+      - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
 
   # - caption: EMI 101
   #   numbered: true
