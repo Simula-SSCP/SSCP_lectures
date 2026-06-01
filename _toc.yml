@@ -104,6 +104,32 @@ parts:
           - file: "L04_06 (Modeling Action Potentials)/book/13.2_markov_models"
           - file: "L04_06 (Modeling Action Potentials)/book/13.3_exercise_grandi_bers"
 
+  - caption: Spatial Conduction and the Cable Equation
+    numbered: 1
+    chapters:
+      # CHAPTER 14: Module Overview
+      - file: "L07_08 (Cable Equation)/book/14.0_module_overview"
+
+      # CHAPTER 15: The Cable Equation
+      - file: "L07_08 (Cable Equation)/book/15.0_cable_eq_overview"
+        sections:
+          - file: "L07_08 (Cable Equation)/book/15.1_history_and_biology"
+          - file: "L07_08 (Cable Equation)/book/15.2_derivation"
+          - file: "L07_08 (Cable Equation)/book/15.3_scaling"
+
+      # CHAPTER 16: Numerical Methods and the Bistable Equation
+      - file: "L07_08 (Cable Equation)/book/16.0_numerical_overview"
+        sections:
+          - file: "L07_08 (Cable Equation)/book/16.1_finite_difference"
+          - file: "L07_08 (Cable Equation)/book/16.2_the_bistable_equation"
+          - file: "L07_08 (Cable Equation)/book/16.3_exercise_bistable"
+
+      # CHAPTER 17: The FitzHugh-Nagumo Model and Reentry
+      - file: "L07_08 (Cable Equation)/book/17.0_fhn_overview"
+        sections:
+          - file: "L07_08 (Cable Equation)/book/17.1_fhn_model"
+          - file: "L07_08 (Cable Equation)/book/17.2_exercise_fhn_reentry"
+
   # - caption: Electrical Conduction in Biology
   #   numbered: true
   #   chapters:
@@ -276,6 +302,12 @@ parts:
           - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1a_sol"
           - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1b_sol"
           - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1c_sol"
+
+      # Solutions for Ion Channel Gating and Action Potential Models
+      - file: "L07_08 (Cable Equation)/book/ex_sol_cable_eq_landing"
+        sections:
+          - file: "L07_08 (Cable Equation)/book/ex_16.1_sol"
+          - file: "L07_08 (Cable Equation)/book/ex_17.1_sol"
 
       # Solutions for Python Tutorial
       - file: "L00 (Python Tutorial)/book/ex_sol_py_tut_landing"
