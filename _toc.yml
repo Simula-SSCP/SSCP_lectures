@@ -14,8 +14,8 @@ parts:
   - caption: Physical Chemistry and Electrochemistry
     numbered: 1
     chapters:
-      # CHAPTER 1: Lecture introduction
-      - file: "L02 (Physical Chemistry)/book/1.0_lecture_overview"
+      # CHAPTER 1: Module introduction
+      - file: "L02 (Physical Chemistry)/book/1.0_module_overview"
 
       # CHAPTER 2: Fundamentals of chemical kinetics
       - file: "L02 (Physical Chemistry)/book/2.0_kinetics_overview"
@@ -47,8 +47,8 @@ parts:
   - caption: Mass Transport and Membrane Biophysics
     numbered: 1
     chapters:
-      # CHAPTER 6: Lecture introduction
-      - file: "L03 (The Cell Membrane and Mass Transport)/book/6.0_lecture_overview"
+      # CHAPTER 6: Module introduction
+      - file: "L03 (The Cell Membrane and Mass Transport)/book/6.0_module_overview"
 
       # CHAPTER 7: The cell membrane and capacitance
       - file: "L03 (The Cell Membrane and Mass Transport)/book/7.0_membrane_overview"
@@ -70,28 +70,39 @@ parts:
           - file: "L03 (The Cell Membrane and Mass Transport)/book/8.6_toward_gating"
           - file: "L03 (The Cell Membrane and Mass Transport)/book/8.7_exercise_simple_ap_model"
 
-  # - caption: Ion Channel Gating
-  #   numbered: true
-  #   chapters:
-  #     - file: "L04 (Ion Channel Gating)/ch_3.0_ion_channel_gating"
-  #       sections:
-  #         - file: "L04 (Ion Channel Gating)/ch_3.1_exercises"
-  #         - file: "L04 (Ion Channel Gating)/ch_3.2_exercises_stochastic"
+  - caption: Ion Channel Gating and Action Potential Models
+    numbered: 1
+    chapters:
+      # CHAPTER 9: Module introduction
+      - file: "L04_06 (Modeling Action Potentials)/book/9.0_module_overview"
 
-  # - caption: Building Modern Ion Channel Models
-  #   numbered: true
-  #   chapters:
-  #     - file: "L05 (Building Ion Channel Models)/ch_4.0_ion_channel_models"
-  #       sections:
-  #         - file: "L05 (Building Ion Channel Models)/E5/ch_4.1_data_example"
-  #         - file: "L05 (Building Ion Channel Models)/E5/ch_4.2_exercises"
+      # CHAPTER 10: The Biological and Experimental Basis of Gating
+      - file: "L04_06 (Modeling Action Potentials)/book/10.0_biology_overview"
+        sections:
+          - file: "L04_06 (Modeling Action Potentials)/book/10.1_structure_function"
+          - file: "L04_06 (Modeling Action Potentials)/book/10.2_measuring_channels"
+          - file: "L04_06 (Modeling Action Potentials)/book/10.3_exercise_stochastic"
 
-  # - caption: Combining Ion Transporter Models to Simulate the Action Potential
-  #   numbered: true
-  #   chapters:
-  #     - file: "L06 (Simulating Action Potentials)/ch_5.0_action_potential"
-  #       sections:
-  #         - file: "L06 (Simulating Action Potentials)/E6/ch_5.1_exercises"
+      # CHAPTER 11: The Hodgkin-Huxley Gating Framework
+      - file: "L04_06 (Modeling Action Potentials)/book/11.0_hh_gating_overview"
+        sections:
+          - file: "L04_06 (Modeling Action Potentials)/book/11.1_math_of_gating"
+          - file: "L04_06 (Modeling Action Potentials)/book/11.2_voltage_dependence"
+          - file: "L04_06 (Modeling Action Potentials)/book/11.3_experimental_protocols"
+          - file: "L04_06 (Modeling Action Potentials)/book/11.4_exercise_gating_functions"
+
+      # CHAPTER 12: Simulating the Action Potential
+      - file: "L04_06 (Modeling Action Potentials)/book/12.0_ap_simulation_overview"
+        sections:
+          - file: "L04_06 (Modeling Action Potentials)/book/12.1_combining_currents"
+          - file: "L04_06 (Modeling Action Potentials)/book/12.2_exercise_hh_action_potential"
+
+      # CHAPTER 13: Modern Cardiac and Neural Models
+      - file: "L04_06 (Modeling Action Potentials)/book/13.0_modern_models_overview"
+        sections:
+          - file: "L04_06 (Modeling Action Potentials)/book/13.1_the_current_zoo" # Merged cardiac/neuro currents
+          - file: "L04_06 (Modeling Action Potentials)/book/13.2_markov_models"
+          - file: "L04_06 (Modeling Action Potentials)/book/13.3_exercise_grandi_bers"
 
   # - caption: Electrical Conduction in Biology
   #   numbered: true
@@ -248,6 +259,23 @@ parts:
           - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.2f_sol"
           - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.3a_sol"
           - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_8.3b_sol"
+
+      # Solutions for Ion Channel Gating and Action Potential Models
+      - file: "L04_06 (Modeling Action Potentials)/book/ex_sol_ap_models_landing"
+        sections:
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1d_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1c_sol"
 
       # Solutions for Python Tutorial
       - file: "L00 (Python Tutorial)/book/ex_sol_py_tut_landing"
