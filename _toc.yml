@@ -130,43 +130,79 @@ parts:
           - file: "L07_08 (Cable Equation)/book/17.1_fhn_model"
           - file: "L07_08 (Cable Equation)/book/17.2_exercise_fhn_reentry"
 
-  # - caption: Electrical Conduction in Biology
-  #   numbered: true
-  #   chapters:
-  #     - file: "L07 (Cable Equation)/ch_6.0_cable_equation_derivation"
-  #       sections:
-  #         - file: "L07 (Cable Equation)/ch_6.1_cable_equation_biology"
-  #         - file: "L07 (Cable Equation)/ch_6.2_fitzhugh_nagumo"
+  - caption: Intracellular Calcium Handling
+    numbered: 1
+    chapters:
+      # CHAPTER 18: Module Overview
+      - file: "L09 (Calcium Handling)/book/18.0_module_overview"
 
-  # - caption: Modelling Electrical Conduction in Cardiac Tissue
-  #   numbered: true
-  #   chapters:
-  #     - file: "L08 (Electrical Conduction in the Heart)/ch_7.0_cardiac_conduction"
-  #       sections:
-  #         - file: "L08 (Electrical Conduction in the Heart)/ch_7.1_exercises"
+      # CHAPTER 19: Excitation-contraction coupling
+      - file: "L09 (Calcium Handling)/book/19.0_ecc_overview"
+        sections:
+          - file: "L09 (Calcium Handling)/book/19.1_calcium_signaling" # Biology, structures, and force
+          - file: "L09 (Calcium Handling)/book/19.2_the_calcium_transient" # Step-by-step CICR
+          - file: "L09 (Calcium Handling)/book/19.3_calcium_cycling_balance" # Species differences
 
-  # - caption: Quantitative Aspects of Calcium Handling
-  #   numbered: true
-  #   chapters:
-  #     - file: "L09 (Calcium Handling)/ch_8.0_calcium_ecc"
-  #       sections:
-  #         - file: "L09 (Calcium Handling)/ch_8.1_serca"
-  #         - file: "L09 (Calcium Handling)/ch_8.2_ncx"
-  #         - file: "L09 (Calcium Handling)/ch_8.3_exercises"
+      # CHAPTER 20: Pumps, exchangers, and regulation
+      - file: "L09 (Calcium Handling)/book/20.0_pumps_overview"
+        sections:
+          - file: "L09 (Calcium Handling)/book/20.1_the_serca_pump" # Unidirectional to Markov models
+          - file: "L09 (Calcium Handling)/book/20.2_the_ncx" # Reversal potential, Luo-Rudy
+          - file: "L09 (Calcium Handling)/book/20.3_regulation_and_autoregulation" # Beta-adrenergic, caffeine
+          - file: "L09 (Calcium Handling)/book/20.4_exercise_thermodynamics" # Ex: SERCA and NCX math (E10 Ex 1 & 2)
 
-  # - caption: Fundamental Cardiac Mechanics
-  #   numbered: true
-  #   chapters:
-  #     - file: "L10 (Cardiac Mechanics)/ch_9.0_placeholder"
+      # CHAPTER 21: Simulating calcium dynamics
+      - file: "L09 (Calcium Handling)/book/21.0_simulation_overview"
+        sections:
+          - file: "L09 (Calcium Handling)/book/21.1_exercise_friel_model" # Ex: Simple calcium cycling
+          - file: "L09 (Calcium Handling)/book/21.2_exercise_jafri_model" # Ex: Complex cardiac dynamics
 
-  # - caption: Myofilament Dynamics
-  #   numbered: true
-  #   chapters:
-  #     - file: "L11 (Myofilament Dynamics)/ch_10.0_myofilament_intro"
-  #       sections:
-  #         - file: "L11 (Myofilament Dynamics)/ch_10.1_crossbridge_model"
-  #         - file: "L11 (Myofilament Dynamics)/ch_10.2_cooperative_mechanisms"
-  #         - file: "L11 (Myofilament Dynamics)/ch_10.3_rice_model"
+  - caption: Fundamental Cardiac Mechanics
+    numbered: 1
+    chapters:
+      # CHAPTER 22: Module Overview
+      - file: "L10 (Cardiac Mechanics)/book/22.0_module_overview"
+
+      # CHAPTER 23: Ventricular Function
+      - file: "L10 (Cardiac Mechanics)/book/23.0_ventricular_function"
+
+      # CHAPTER 24: Cardiac Muscle
+      - file: "L10 (Cardiac Mechanics)/book/24.0_cardiac_muscle"
+
+      # CHAPTER 25: Nonlinear Biomechanics
+      - file: "L10 (Cardiac Mechanics)/book/25.0_nonlinear_biomechanics"
+
+      # CHAPTER 26: Statistical Shape Atlases
+      - file: "L10 (Cardiac Mechanics)/book/26.0_shape_atlases"
+        sections:
+          - file: "L10 (Cardiac Mechanics)/book/26.1_example_explore_atlas"
+
+      # CHAPTER 27: Network Modelling
+      - file: "L10 (Cardiac Mechanics)/book/27.0_network_modelling"
+
+  - caption: Myofilament Dynamics
+    numbered: 1
+    chapters:
+      # CHAPTER 28: Module Overview
+      - file: "L11 (Myofilament Dynamics)/book/28.0_module_overview"
+
+      # CHAPTER 29: The Foundation
+      - file: "L11 (Myofilament Dynamics)/book/29.0_huxley_overview"
+        sections:
+          - file: "L11 (Myofilament Dynamics)/book/29.1_huxley_theory"
+          - file: "L11 (Myofilament Dynamics)/book/29.2_example_huxley"
+
+      # CHAPTER 30: State-Based Modeling and Cooperativity
+      - file: "L11 (Myofilament Dynamics)/book/30.0_razumova_overview"
+        sections:
+          - file: "L11 (Myofilament Dynamics)/book/30.1_razumova_theory"
+          - file: "L11 (Myofilament Dynamics)/book/30.2_exercise_razumova"
+
+      # CHAPTER 31: Modern Comprehensive Models
+      - file: "L11 (Myofilament Dynamics)/book/31.0_rice_overview"
+        sections:
+          - file: "L11 (Myofilament Dynamics)/book/31.1_rice_theory"
+          - file: "L11 (Myofilament Dynamics)/book/31.2_exercise_rice"
 
   - caption: The finite element method (FEM)
     chapters:
@@ -186,12 +222,12 @@ parts:
     chapters:
       - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
 
-  # - caption: EMI 101
-  #   numbered: true
-  #   chapters:
-  #     - file: "L15 (EMI)/ch_13.0_emi_foundations"
-  #       sections:
-  #         - file: "L15 (EMI)/ch_13.1_emi_implementation"
+  - caption: EMI
+    numbered: 1
+    chapters:
+      - file: "L15 (EMI)/EMI"
+        # sections:
+        #   - file: "L15 (EMI)/book/"
 
   - caption: Python Tutorial
     numbered: false
