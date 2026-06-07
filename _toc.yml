@@ -189,6 +189,7 @@ parts:
   - caption: L15 The EMI model
     chapters:
       - file: "L15 (EMI model)/L15_EMI_single_cell.ipynb"
+      - file: "L15 (EMI model)/L15_EMI_conduction.ipynb"
 
   # - caption: EMI 101
   #   numbered: true
