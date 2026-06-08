@@ -15,34 +15,34 @@ parts:
     numbered: 1
     chapters:
       # CHAPTER 1: Module introduction
-      - file: "L02 (Physical Chemistry)/book/1.0_module_overview"
+      - file: "L02 (Physical Chemistry)/book/chapters/1.0_module_overview"
 
       # CHAPTER 2: Fundamentals of chemical kinetics
-      - file: "L02 (Physical Chemistry)/book/2.0_kinetics_overview"
+      - file: "L02 (Physical Chemistry)/book/chapters/2.0_kinetics_overview"
         sections:
-          - file: "L02 (Physical Chemistry)/book/2.1_mass_action"
-          - file: "L02 (Physical Chemistry)/book/2.2_example_mass_action"
-          - file: "L02 (Physical Chemistry)/book/2.3_equilibrium"
-          - file: "L02 (Physical Chemistry)/book/2.4_exercise_equilibrium"
+          - file: "L02 (Physical Chemistry)/book/chapters/2.1_mass_action"
+          - file: "L02 (Physical Chemistry)/book/exercises/example_2.1_mass_action"
+          - file: "L02 (Physical Chemistry)/book/chapters/2.3_equilibrium"
+          - file: "L02 (Physical Chemistry)/book/exercises/exercise_2.1_equilibrium"
 
       # CHAPTER 3: Ligand binding and cooperativity
-      - file: "L02 (Physical Chemistry)/book/3.0_binding_overview"
+      - file: "L02 (Physical Chemistry)/book/chapters/3.0_binding_overview"
         sections:
-          - file: "L02 (Physical Chemistry)/book/3.1_fractional_binding"
-          - file: "L02 (Physical Chemistry)/book/3.2_hill_equation"
+          - file: "L02 (Physical Chemistry)/book/chapters/3.1_fractional_binding"
+          - file: "L02 (Physical Chemistry)/book/chapters/3.2_hill_equation"
 
       # CHAPTER 4: Thermodynamics and transport
-      - file: "L02 (Physical Chemistry)/book/4.0_thermo_overview"
+      - file: "L02 (Physical Chemistry)/book/chapters/4.0_thermo_overview"
         sections:
-          - file: "L02 (Physical Chemistry)/book/4.1_thermodynamics"
-          - file: "L02 (Physical Chemistry)/book/4.2_diffusion"
+          - file: "L02 (Physical Chemistry)/book/chapters/4.1_thermodynamics"
+          - file: "L02 (Physical Chemistry)/book/chapters/4.2_diffusion"
 
       # CHAPTER 5: Enzyme kinetics
-      - file: "L02 (Physical Chemistry)/book/5.0_enzymes_overview"
+      - file: "L02 (Physical Chemistry)/book/chapters/5.0_enzymes_overview"
         sections:
-          - file: "L02 (Physical Chemistry)/book/5.1_enzyme_kinetics"
-          - file: "L02 (Physical Chemistry)/book/5.2_michaelis_menten"
-          - file: "L02 (Physical Chemistry)/book/5.3_exercise_enzymes"
+          - file: "L02 (Physical Chemistry)/book/chapters/5.1_enzyme_kinetics"
+          - file: "L02 (Physical Chemistry)/book/chapters/5.2_michaelis_menten"
+          - file: "L02 (Physical Chemistry)/book/exercises/exercise_5.1_enzymes"
 
   - caption: Mass Transport and Membrane Biophysics
     numbered: 1
@@ -283,20 +283,20 @@ parts:
       - file: course_intro/app_solutions_intro
 
       # Solutions for Physical Chemistry and Electrochemistry
-      - file: "L02 (Physical Chemistry)/book/ex_sol_physchem_landing"
+      - file: "L02 (Physical Chemistry)/book/solutions/ex_sol_physchem_landing"
         sections:
-          - file: "L02 (Physical Chemistry)/book/ex_2.1a_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_2.1b_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_2.1c_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_2.1d_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_2.1e_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1a_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1b_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1c_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1d_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1e_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1f_sol"
-          - file: "L02 (Physical Chemistry)/book/ex_5.1g_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_2.1a_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_2.1b_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_2.1c_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_2.1d_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_2.1e_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1a_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1b_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1c_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1d_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1e_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1f_sol"
+          - file: "L02 (Physical Chemistry)/book/solutions/ex_5.1g_sol"
 
       # Solutions for Mass Transport and Membrane Biophysics
       - file: "L03 (The Cell Membrane and Mass Transport)/book/ex_sol_membrane_biophys_landing"
