@@ -16,7 +16,7 @@ We call this rapid change, and the signal itself, the _action potential_. In neu
 
 Action potentials are hugely important for cell function, and they are one of the main focuses of _electrophysiology_. In this and the coming sessions, we will be focusing precisely on the action potential, trying to understand where it comes from and how to model it.
 
-```{figure} ../fig/ap_train.png
+```{figure} ../../fig/ap_train.png
 ---
 width: 800px
 name: fig_ap_train
@@ -24,7 +24,7 @@ name: fig_ap_train
 Cardiomyocytes (heart muscle cells) produce action potentials at a regular pace, with each action potential corresponding to a contraction of the cell.
 ```
 
-```{figure} ../fig/action_potential.svg
+```{figure} ../../fig/action_potential.svg
 ---
 width: 500px
 name: fig_action_potential_sketch

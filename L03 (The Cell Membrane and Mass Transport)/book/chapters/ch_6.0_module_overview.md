@@ -1,4 +1,4 @@
-# Introduction to membrane biophysics
+# Module overview
 
 In the previous module, we established the fundamental physical laws governing molecular interactions. We used the law of mass action to track chemical kinetics, explored how ligands bind to proteins, and grounded our models in the strict thermodynamic constraints of Gibbs free energy and diffusion.
 

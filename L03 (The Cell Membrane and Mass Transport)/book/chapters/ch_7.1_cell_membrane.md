@@ -4,7 +4,7 @@ The cell _membrane_ is an organelle that surrounds the cell, acting as the barri
 
 The macroscopic structure of the membrane is fairly complex, but its fundamental building blocks are simple. They are molecules known as phospholipids. The most important feature of these molecules, shown in the figure below, is that one side is _hydrophobic_ and one side is _hydrophilic_.
 
-```{figure} ../fig/phospholipid.png
+```{figure} ../../fig/phospholipid.png
 ---
 width: 300px
 name: fig_phospholipid
@@ -18,7 +18,7 @@ Phospholipids are _both_ hydrophilic and hydrophobic at the same time, so what h
 
 One such structure is the _lipid bilayer_. In the bilayer, the phospholipids create two planar sheets that lie in parallel, with the tails of each pointing towards the center. The layers do not allow water to pass inside, and so the structure very effectively hides the hydrophobic tails away from the water.
 
-```{figure} ../fig/lipid_bilayer.png
+```{figure} ../../fig/lipid_bilayer.png
 ---
 width: 400px
 name: fig_lipid_bilayer
@@ -30,7 +30,7 @@ The bilayer has a fixed thickness and is very thin, about 5 nm across. However, 
 
 A typical cardiomyocyte is cylindrical, around 100 µm long, and about 20 µm in diameter. The membrane itself is thus _extremely thin_ compared to the size of the cell. A fun little back-of-the-envelope calculation you can do is compare this ratio to the thickness of the Earth's crust or the skin of an apple.
 
-In the next section {doc}`Exercise 7.1: How thin is the cell membrane? <7.2_exercise_membrane_thickness>`, you will perform this calculation yourself!
+In the next section {doc}`Exercise 7.1: How thin is the cell membrane? <../exercises/exercise_7.1_membrane_thickness>`, you will perform this calculation yourself!
 
 ## Permeability of the membrane
 

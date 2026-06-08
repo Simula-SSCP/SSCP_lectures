@@ -10,7 +10,7 @@ When potassium ions leave the cell, they leave behind a surplus of negatively ch
 
 Eventually, this electric field becomes strong enough to completely cancel out the diffusive pressure, and the system reaches a steady equilibrium. There will still be a concentration gradient pushing ions out, and an electric potential pulling ions in, but these two forces perfectly cancel each other out.
 
-```{figure} ../fig/reversal_potential.png
+```{figure} ../../fig/reversal_potential.png
 ---
 width: 800px
 name: fig_reversal_potential
@@ -41,7 +41,7 @@ First, we can divide out the diffusion coefficient $D_k$. Apparently, the _rate_
 
 To make sense of this equation spatially, we assume the outside and inside of the cell are perfectly well-mixed. Therefore, gradients only exist directly _across_ the thickness of the membrane itself.
 
-```{figure} ../fig/nernst.png
+```{figure} ../../fig/nernst.png
 ---
 width: 400px
 name: fig_nernst_gradients
@@ -139,4 +139,4 @@ The following table provides typical physiological concentrations for mammalian 
 | Potassium (K$^+$)   |    100 mM     |          4 mM |           -86 mV |
 | Calcium (Ca$^{2+}$) |    0.2 µM     |          1 mM |          +114 mV |
 
-In {doc}`Exercise 8.2: Calculating Nernst potentials <8.3_exercise_nernst_potential>` you will compute the Nernst potentials yourself to verify that these values make sense.
+In {doc}`Exercise 8.2: Calculating Nernst potentials <../exercises/exercise_8.1_nernst_potential>` you will compute the Nernst potentials yourself to verify that these values make sense.

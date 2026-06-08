@@ -22,4 +22,4 @@ Here, $\bar{g}_{\mathrm{Na}}$ represents the _maximum possible_ conductance if e
 
 Why there are two different gating variables, $m$ and $h$, and why one is raised to a power of 3, will be explored in detail in the next module.
 
-For now, we will use what we have learned so far to make a very simpel model of the action potential in {doc}`Exercise 8.3: A super simple action potential model <8.7_exercise_simple_ap_model>`.
+For now, we will use what we have learned so far to make a very simpel model of the action potential in {doc}`Exercise 8.3: A super simple action potential model <../exercises/exercise_8.3_simple_ap_model>`.

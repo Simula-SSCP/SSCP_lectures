@@ -6,7 +6,7 @@ The cells permeable exclusively to sodium and calcium would achieve highly posit
 
 Looking at the concentrations, this makes perfect physical sense. Sodium and calcium have massive _inward_ concentration gradients; these ions are physically driven to enter the cell, which dumps positive charge inside and raises the membrane potential. Because of this, we refer to sodium and calcium currents as **inward currents**. Conversely, potassium is vastly more abundant inside the cell and wants to leave, which drains positive charge and lowers the potential. Potassium generates an **outward current**.
 
-```{figure} ../fig/nernst_potentials.png
+```{figure} ../../fig/nernst_potentials.png
 ---
 width: 700px
 name: fig_nernst_potentials_driving
@@ -57,7 +57,7 @@ Yes. Returning to the full Nernst-Planck equation and solving it strictly throug
 
 Comparing the simple Ohmic model to the complex GHK equation, they both agree that current is zero when $V = E_{\mathrm{X}}$. They both agree the current changes direction at this reversal potential. However, they _disagree_ on how quickly the current scales. While the Ohmic current is a perfectly straight line, the GHK equation is nonlinear and exhibits **rectification** (meaning it passes current more easily in one direction than the other).
 
-```{figure} ../fig/ohmic_vs_ghk.png
+```{figure} ../../fig/ohmic_vs_ghk.png
 ---
 width: 400px
 name: fig_ohmic_vs_ghk
@@ -73,7 +73,7 @@ Using our Ohmic current approximations, we can now assemble our final ODE to mod
 
 The cell membrane is embedded with a vast number of ion channels. While each channel conducts only a tiny amount of current, we can lump identical channels together and treat them as a single macro-electrical component. We model each ionic species as a conductance coupled in series to a battery (the Nernst potential). We then place all of these ion channel components in _parallel_ to the lipid bilayer capacitor itself.
 
-```{figure} ../fig/ohmic_currents.png
+```{figure} ../../fig/ohmic_currents.png
 ---
 width: 600px
 name: fig_ohmic_circuit
@@ -120,4 +120,4 @@ Which gives us our master ODE for the membrane potential:
 \frac{\mathrm{d}V}{\mathrm{d}t} = -\frac{1}{C_{\mathrm{m}}} \Big[ g_{\mathrm{Na}}(V - E_{\mathrm{Na}}) + g_{\mathrm{K}}(V - E_{\mathrm{K}}) + g_{\mathrm{Ca}}(V - E_{\mathrm{Ca}}) \Big]
 ```
 
-Having derived ODEs for both the sodium-only, and the sodium + potassium + calcium cases, it is time to actually solve these models and see how they behave in {doc}`Exercise 8.3: The equilibrium membrane potential <8.5_exercise_equilibrium_potential>`.
+Having derived ODEs for both the sodium-only, and the sodium + potassium + calcium cases, it is time to actually solve these models and see how they behave in {doc}`Exercise 8.3: The equilibrium membrane potential <../exercises/exercise_8.2_equilibrium_potential>`.

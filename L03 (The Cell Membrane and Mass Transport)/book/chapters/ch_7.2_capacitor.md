@@ -4,7 +4,7 @@ The inside and outside of the cell are both fluid-filled environments with plent
 
 If an electric potential is applied across a capacitor, an electric current _wants_ to flow through, but the insulator prevents it. Instead, we get a pile-up of charge on both sides of the insulator. This build-up of charge continues until the static charge is large enough to set up an electric field of equal strength—but opposite direction—to the applied potential, effectively canceling it out. We can say that the capacitor acts like a tiny battery that gets charged up, and once it is fully charged, the current stops.
 
-```{figure} ../fig/capacitor.png
+```{figure} ../../fig/capacitor.png
 ---
 width: 400px
 name: fig_capacitor_concept
@@ -51,7 +51,7 @@ We now have a differential equation we can use to model how the membrane potenti
 
 Since it is useful to model the membrane as an electrical component, it is also useful to draw an electrical circuit diagram summarizing our model. In this basic case, it will be very simple, as shown below.
 
-```{figure} ../fig/membrane_capacitor.png
+```{figure} ../../fig/membrane_capacitor.png
 ---
 width: 400px
 name: fig_membrane_circuit
@@ -70,4 +70,4 @@ Even though the membrane potential is technically a potential _difference_, it i
 
 ## Your turn: Looking at a simple _voltage clamp_ model
 
-To get a better feel for the equations we have just shown you. Please turn to the accompanying exercises in the next section: {doc}`Exercise 7.2: A simple voltage clamp model <7.4_exercise_voltage_clamp>`.
+To get a better feel for the equations we have just shown you. Please turn to the accompanying exercises in the next section: {doc}`Exercise 7.2: A simple voltage clamp model <../exercises/exercise_7.2_voltage_clamp>`.

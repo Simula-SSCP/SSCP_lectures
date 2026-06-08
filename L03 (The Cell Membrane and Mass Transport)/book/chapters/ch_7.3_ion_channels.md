@@ -6,7 +6,7 @@ While the lipid bilayer of the membrane is a simple barrier structure, the membr
 
 These channels typically contain a _selectivity filter_, meaning they only allow ions of a very specific type to pass through. Most channels also have the ability to physically open and close in response to various factors and conditions—this opening and closing is called _gating_, which will be the topic for most of tomorrow's lectures.
 
-```{figure} ../fig/ion_channel.png
+```{figure} ../../fig/ion_channel.png
 ---
 width: 800px
 name: fig_ion_channels
