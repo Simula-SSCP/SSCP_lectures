@@ -1,4 +1,4 @@
-# Overview of physical chemistry and the cell membrane
+# Module overview
 
 This module focuses on the physical chemistry that forms the foundation of electrophysiology. Before we begin modeling the complex electrical properties and behavior of the cell membrane in upcoming chapters, we first need to establish a framework using general concepts from chemistry and thermodynamics.
 
