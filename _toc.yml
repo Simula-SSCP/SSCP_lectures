@@ -211,7 +211,7 @@ parts:
       - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
-  - caption: FEniCS mechanics
+  - caption: FEniCS Mechanics
     chapters:
       - file: "L13 (FEniCS Mechanics)/L13_passive_cube.ipynb"
       - file: "L13 (FEniCS Mechanics)/L13_active_cube.ipynb"
@@ -222,12 +222,13 @@ parts:
     chapters:
       - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
 
-  - caption: EMI
+  - caption: The EMI model
     numbered: 1
     chapters:
-      - file: "L15 (EMI)/EMI"
-        # sections:
-        #   - file: "L15 (EMI)/book/"
+      - file: "L15 (EMI)/L15_EMI_single_cell.ipynb"
+      - file: "L15 (EMI)/L15_EMI_conduction_uniform.ipynb"
+      - file: "L15 (EMI)/L15_EMI_conduction_nonuniform.ipynb"
+      - file: "L15 (EMI)/L15_solutions.ipynb"
 
   - caption: Python Tutorial
     numbered: false
