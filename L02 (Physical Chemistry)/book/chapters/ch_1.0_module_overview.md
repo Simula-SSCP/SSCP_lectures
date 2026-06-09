@@ -1,0 +1,17 @@
+# Module overview
+
+This module focuses on the physical chemistry that forms the foundation of electrophysiology. Before we begin modeling the complex electrical properties and behavior of the cell membrane in upcoming chapters, we first need to establish a framework using general concepts from chemistry and thermodynamics.
+
+Our goal here is to give you a brief overview of these foundational concepts and to get you into the right mathematical mindset for the coming days. The students at the SSCP come from highly varied academic backgrounds; as a result, the topics covered here might be very familiar to some of you, but completely new to others. Whether this serves as a gentle introduction, a quick refresher, or a new perspective on old concepts, this module is designed to be useful for everyone.
+
+:::{admonition} What you will learn
+:class: tip
+
+- Reaction rates using the law of mass action
+- Cooperative binding using the Hill equation
+- Thermodynamics and Gibbs energy
+- Diffusion and Fick's law
+- Enzyme kinetics and the Michaelis-Menten model
+  :::
+
+These are broad and extensive topics. While we provide examples to help you familiarize yourself with the material, these equations will likely make much more sense as we progress through the summer school and you see them applied to specific aspects of cell modeling. Code-based exercises are also included to help you practice and apply these principles.
