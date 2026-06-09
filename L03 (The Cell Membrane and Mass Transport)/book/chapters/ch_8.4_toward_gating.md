@@ -1,0 +1,25 @@
+# Summary and moving toward gating
+
+In this module, we established that the cell membrane acts as a capacitor, generating a membrane potential. We saw how open ion channels allow passive, electrodiffusive currents that shift this potential. We derived the Nernst Potential, and used it to define Ohmic currents.
+
+The final model we derived is:
+
+```{math}
+:label: eq:ode_master_summary
+\frac{\mathrm{d}V}{\mathrm{d}t} = -\frac{1}{C_{\mathrm{m}}} \Big[ g_{\mathrm{Na}}(V - E_{\mathrm{Na}}) + g_{\mathrm{K}}(V - E_{\mathrm{K}}) + g_{\mathrm{Ca}}(V - E_{\mathrm{Ca}}) \Big]
+```
+
+The next piece of the puzzle is to introduce **ion channel gating**. What gating effectively does is dynamically adjust the conductance parameters ($g_{\mathrm{Na}}$, $g_{\mathrm{K}}$, and $g_{\mathrm{Ca}}$) over time based on the voltage itself!
+
+When we add gating, we introduce _gating variables_ to our system. For instance, the classic sodium current is written as:
+
+```{math}
+:label: eq:gated_current
+I_{\mathrm{Na}} = \bar{g}_{\mathrm{Na}} \cdot m^3 \cdot h \cdot (V - E_{\mathrm{Na}})
+```
+
+Here, $\bar{g}_{\mathrm{Na}}$ represents the _maximum possible_ conductance if every single channel were open. The variables $m$ and $h$ are the gating variables representing the _probability_ of the channel being open (numbers between 0 and 1). The main effect of gating is to scale the magnitude of the currents between 0% and 100%.
+
+Why there are two different gating variables, $m$ and $h$, and why one is raised to a power of 3, will be explored in detail in the next module.
+
+For now, we will use what we have learned so far to make a very simpel model of the action potential in {doc}`Exercise 8.3: A super simple action potential model <../exercises/exercise_8.3_simple_ap_model>`.

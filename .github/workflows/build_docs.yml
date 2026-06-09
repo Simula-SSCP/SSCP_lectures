@@ -17,10 +17,8 @@ defaults:
 jobs:
   build-book:
     runs-on: ubuntu-latest
-    container: ubuntu:22.04
 
     steps:
-
       - uses: actions/checkout@v5
 
       - name: Initialize SSCP conda environment
@@ -33,8 +31,7 @@ jobs:
           key: jupyter-cache-${{ hashFiles('pixi.lock') }}
 
       - name: Run the lecture notes and build webpage
-        run:
-          pixi run jupyter-book build .
+        run: pixi run jupyter-book build .
 
       - uses: actions/upload-artifact@v6
         # always upload artifact, which can include error messages
