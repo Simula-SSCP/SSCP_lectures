@@ -20,7 +20,7 @@ Put simply, entropy is a measure of a system's _disorder_, and it is a physical 
 
 ## Gibbs free energy (energy + entropy combined)
 
-The first and second laws of thermodynamics describe physical properties of how nature works; they must always be fulfilled. Since the two regard different physical properties, however, including both in any given analysis can be a bit tricky. To make this easier, we combine the two quantities into a single quantity called the _Gibbs free energy_, or simply the _Gibbs energy_ of the system. It can be expressed as:
+The first and second laws of thermodynamics describe physical properties of how nature works; they must always be fulfilled. Since the two regard different physical properties, however, including both in any given analysis can be nontrivial. To make this easier, we combine the two quantities into a single quantity called the _Gibbs free energy_, or simply the _Gibbs energy_ of the system. It can be expressed as:
 
 ```{math}
 :label: eq:gibbs_def
