@@ -108,54 +108,56 @@ parts:
     numbered: 1
     chapters:
       # CHAPTER 14: Module Overview
-      - file: "L07_08 (Cable Equation)/book/14.0_module_overview"
+      - file: "L07 (Cable Equation)/book/chapters/14.0_module_overview"
 
       # CHAPTER 15: The Cable Equation
-      - file: "L07_08 (Cable Equation)/book/15.0_cable_eq_overview"
+      - file: "L07 (Cable Equation)/book/chapters/15.0_cable_eq_overview"
         sections:
-          - file: "L07_08 (Cable Equation)/book/15.1_history_and_biology"
-          - file: "L07_08 (Cable Equation)/book/15.2_derivation"
-          - file: "L07_08 (Cable Equation)/book/15.3_scaling"
+          - file: "L07 (Cable Equation)/book/chapters/15.1_history_and_biology"
+          - file: "L07 (Cable Equation)/book/chapters/15.2_derivation"
+          - file: "L07 (Cable Equation)/book/chapters/15.3_scaling"
+          - file: "L07 (Cable Equation)/book/exercises/exercise_15.1_pen_and_paper"
 
       # CHAPTER 16: Numerical Methods and the Bistable Equation
-      - file: "L07_08 (Cable Equation)/book/16.0_numerical_overview"
+      - file: "L08 (Electrical Conduction in the Heart)/book/chapters/16.0_numerical_overview"
         sections:
-          - file: "L07_08 (Cable Equation)/book/16.1_finite_difference"
-          - file: "L07_08 (Cable Equation)/book/16.2_the_bistable_equation"
-          - file: "L07_08 (Cable Equation)/book/16.3_exercise_bistable"
+          - file: "L08 (Electrical Conduction in the Heart)/book/chapters/16.1_finite_difference"
+          - file: "L08 (Electrical Conduction in the Heart)/book/chapters/16.2_the_bistable_equation"
+          - file: "L08 (Electrical Conduction in the Heart)/book/exercises/exercise_16.1_bistable_equation"
 
       # CHAPTER 17: The FitzHugh-Nagumo Model and Reentry
-      - file: "L07_08 (Cable Equation)/book/17.0_fhn_overview"
+      - file: "L08 (Electrical Conduction in the Heart)/book/chapters/17.0_fhn_overview"
         sections:
-          - file: "L07_08 (Cable Equation)/book/17.1_fhn_model"
-          - file: "L07_08 (Cable Equation)/book/17.2_exercise_fhn_reentry"
+          - file: "L08 (Electrical Conduction in the Heart)/book/chapters/17.1_fhn_model"
+          - file: "L08 (Electrical Conduction in the Heart)/book/exercises/exercise_17.1_fhn_reentry"
 
   - caption: Intracellular Calcium Handling
     numbered: 1
     chapters:
       # CHAPTER 18: Module Overview
-      - file: "L09 (Calcium Handling)/book/18.0_module_overview"
+      - file: "L09 (Calcium Handling)/book/chapters/18.0_module_overview"
 
       # CHAPTER 19: Excitation-contraction coupling
-      - file: "L09 (Calcium Handling)/book/19.0_ecc_overview"
+      - file: "L09 (Calcium Handling)/book/chapters/19.0_ecc_overview"
         sections:
-          - file: "L09 (Calcium Handling)/book/19.1_calcium_signaling" # Biology, structures, and force
-          - file: "L09 (Calcium Handling)/book/19.2_the_calcium_transient" # Step-by-step CICR
-          - file: "L09 (Calcium Handling)/book/19.3_calcium_cycling_balance" # Species differences
+          - file: "L09 (Calcium Handling)/book/chapters/19.1_calcium_signaling"
+          - file: "L09 (Calcium Handling)/book/chapters/19.2_the_calcium_transient"
+          - file: "L09 (Calcium Handling)/book/chapters/19.3_calcium_cycling_balance"
+          - file: "L09 (Calcium Handling)/book/exercises/exercise_19.1_friel_model"
 
       # CHAPTER 20: Pumps, exchangers, and regulation
-      - file: "L09 (Calcium Handling)/book/20.0_pumps_overview"
+      - file: "L09 (Calcium Handling)/book/chapters/20.0_pumps_overview"
         sections:
-          - file: "L09 (Calcium Handling)/book/20.1_the_serca_pump" # Unidirectional to Markov models
-          - file: "L09 (Calcium Handling)/book/20.2_the_ncx" # Reversal potential, Luo-Rudy
-          - file: "L09 (Calcium Handling)/book/20.3_regulation_and_autoregulation" # Beta-adrenergic, caffeine
-          - file: "L09 (Calcium Handling)/book/20.4_exercise_thermodynamics" # Ex: SERCA and NCX math (E10 Ex 1 & 2)
+          - file: "L09 (Calcium Handling)/book/chapters/20.1_the_serca_pump"
+          - file: "L09 (Calcium Handling)/book/chapters/20.2_the_ncx"
+          - file: "L09 (Calcium Handling)/book/chapters/20.3_regulation_and_autoregulation"
+          - file: "L09 (Calcium Handling)/book/exercises/exercise_20.1_serca_thermodynamics"
+          - file: "L09 (Calcium Handling)/book/exercises/exercise_20.2_ncx_thermodynamics"
 
-      # CHAPTER 21: Simulating calcium dynamics
-      - file: "L09 (Calcium Handling)/book/21.0_simulation_overview"
+      # CHAPTER 21: Simulating a complex cardiac calcium model
+      - file: "L09 (Calcium Handling)/book/chapters/21.0_simulation_overview"
         sections:
-          - file: "L09 (Calcium Handling)/book/21.1_exercise_friel_model" # Ex: Simple calcium cycling
-          - file: "L09 (Calcium Handling)/book/21.2_exercise_jafri_model" # Ex: Complex cardiac dynamics
+          - file: "L09 (Calcium Handling)/book/exercises/exercise_21.1_jafri_model"
 
   - caption: Fundamental Cardiac Mechanics
     numbered: 1
@@ -342,10 +344,40 @@ parts:
           - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1c_sol"
 
       # Solutions for Spatial Conduction and the Cable Equation
-      - file: "L07_08 (Cable Equation)/book/ex_sol_cable_eq_landing"
+      - file: "L07 (Cable Equation)/book/solutions/ex_sol_cable_eq_landing"
         sections:
-          - file: "L07_08 (Cable Equation)/book/ex_16.1_sol"
-          - file: "L07_08 (Cable Equation)/book/ex_17.1_sol"
+          - file: "L07 (Cable Equation)/book/solutions/ex_15.1a_sol"
+          - file: "L07 (Cable Equation)/book/solutions/ex_15.1b_sol"
+          - file: "L07 (Cable Equation)/book/solutions/ex_15.1c_sol"
+          - file: "L08 (Electrical Conduction in the Heart)/book/solutions/ex_16.1_sol"
+          - file: "L08 (Electrical Conduction in the Heart)/book/solutions/ex_17.1_sol"
+
+      # Solutions for Intracellular Calcium Handling
+      - file: "L09 (Calcium Handling)/book/solutions/ex_sol_calcium_handling_landing"
+        sections:
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1a_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1b_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1c_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1d_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1e_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1f_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1g_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1h_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_19.1i_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.1a_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.1b_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.1c_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.1d_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2a_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2b_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2c_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2d_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2e_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_20.2f_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_21.1a_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_21.1b_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_21.1c_sol"
+          - file: "L09 (Calcium Handling)/book/solutions/ex_21.1d_sol"
 
       # Solutions for Python Tutorial
       - file: "L00 (Python Tutorial)/book/solutions/ex_sol_py_tut_landing"
