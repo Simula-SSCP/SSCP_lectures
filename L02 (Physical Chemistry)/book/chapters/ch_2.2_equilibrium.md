@@ -61,6 +61,6 @@ The ratio of the rate constants is typically referred to as the _dissociation co
 
 This equation is referred to as _the equilibrium equation_ or _the equilibrium condition_, and it describes how the ratio of concentrations will settle at equilibrium. It is a direct consequence of the law of mass action. If someone refers to the law of mass action as a single equation, it is typically this equilibrium equation they mean. Note that the equilibrium equation does not hold at all times, but only when a system is actually at equilibrium. However, any chemical system will spontaneously tend towards this state, and for many reactions, this occurs so swiftly that one can consider the system to always be at equilibrium for all practical purposes (typically called a _quasistatic_ process).
 
-The equilibrium equation is very useful, but it might be a bit challenging to see how it is interpreted or used in practice. We will shortly look at an illustrative example, but first, let us take the time to solve the system of ODEs for the reversible reaction.
+The equilibrium equation is very useful, but it may be somewhat challenging to see how it is interpreted or used in practice. We will shortly look at an illustrative example, but first, let us take the time to solve the system of ODEs for the reversible reaction.
 
 In the next section, you will computationally model this reversible reaction to verify that the system does indeed tend towards equilibrium.
