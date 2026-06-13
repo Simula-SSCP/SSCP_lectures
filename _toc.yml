@@ -211,6 +211,7 @@ parts:
           - file: "L11 (Myofilament Dynamics)/book/exercises/exercise_31.1_rice"
 
   - caption: The finite element method (FEM)
+    numbered: 1
     chapters:
       - file: "L12 (FEniCS Intro)/L12_FEM_intro.ipynb"
       - file: "L12 (FEniCS Intro)/L12_FEniCS_intro.ipynb"
@@ -218,6 +219,7 @@ parts:
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
   - caption: FEniCS Mechanics
+    numbered: 1
     chapters:
       - file: "L13 (FEniCS Mechanics)/L13_passive_cube.ipynb"
       - file: "L13 (FEniCS Mechanics)/L13_active_cube.ipynb"
@@ -225,6 +227,7 @@ parts:
       - file: "L13 (FEniCS Mechanics)/L13_solutions.ipynb"
 
   - caption: FEniCS Electrophysiology
+    numbered: 1
     chapters:
       - file: "L14 (FEniCS Electrophysiology)/L05 - FitzhughNagumo-Solution.ipynb"
 
@@ -245,34 +248,34 @@ parts:
       # Tutorial ch. 1: Setup and Jupyter basics
       - file: "L00 (Python Tutorial)/book/overviews/tutorial_1_setup_overview"
         sections:
-          - file: "L00 (Python Tutorial)/book/tutorial_1_setup/tutorial_1.1_installing"
-          - file: "L00 (Python Tutorial)/book/tutorial_1_setup/tutorial_1.2_jupyter_basics"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_1.1_installing"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_1.2_jupyter_basics"
 
       # Tutorial ch. 2: Python fundamentals
       - file: "L00 (Python Tutorial)/book/overviews/tutorial_2_fundamentals_overview"
         sections:
-          - file: "L00 (Python Tutorial)/book/tutorial_2_fundamentals/tutorial_2.1_hello_world"
-          - file: "L00 (Python Tutorial)/book/tutorial_2_fundamentals/tutorial_2.2_variables_types"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_2.1_hello_world"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_2.2_variables_types"
 
       # Tutorial ch. 3: Control flow and data structures
       - file: "L00 (Python Tutorial)/book/overviews/tutorial_3_control_flow_overview"
         sections:
-          - file: "L00 (Python Tutorial)/book/tutorial_3_control_flow/tutorial_3.1_if_tests"
-          - file: "L00 (Python Tutorial)/book/tutorial_3_control_flow/tutorial_3.2_while_loops"
-          - file: "L00 (Python Tutorial)/book/tutorial_3_control_flow/tutorial_3.3_lists"
-          - file: "L00 (Python Tutorial)/book/tutorial_3_control_flow/tutorial_3.4_for_loops"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_3.1_if_tests"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_3.2_while_loops"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_3.3_lists"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_3.4_for_loops"
 
       # Tutorial ch. 4: Functions and plotting
       - file: "L00 (Python Tutorial)/book/overviews/tutorial_4_functions_plotting_overview"
         sections:
-          - file: "L00 (Python Tutorial)/book/tutorial_4_functions_plotting/tutorial_4.1_plotting"
-          - file: "L00 (Python Tutorial)/book/tutorial_4_functions_plotting/tutorial_4.2_functions"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_4.1_plotting"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_4.2_functions"
 
       # Tutorial ch. 5: Solving ODEs numerically
       - file: "L00 (Python Tutorial)/book/overviews/tutorial_5_odes_overview"
         sections:
-          - file: "L00 (Python Tutorial)/book/tutorial_5_odes/tutorial_5.1_forward_euler"
-          - file: "L00 (Python Tutorial)/book/tutorial_5_odes/tutorial_5.2_solve_ivp"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_5.1_forward_euler"
+          - file: "L00 (Python Tutorial)/book/tutorials/tutorial_5.2_solve_ivp"
 
       # Tutorial ch. 6: Practice exercises
       - file: "L00 (Python Tutorial)/book/overviews/exercises_overview"
