@@ -186,31 +186,35 @@ parts:
     numbered: 1
     chapters:
       # CHAPTER 28: Module Overview
-      - file: "L11 (Myofilament Dynamics)/book/28.0_module_overview"
+      - file: "L11 (Myofilament Dynamics)/book/chapters/28.0_module_overview"
 
-      # CHAPTER 29: The Foundation
-      - file: "L11 (Myofilament Dynamics)/book/29.0_huxley_overview"
+      # CHAPTER 29: The Huxley (1957) Model
+      - file: "L11 (Myofilament Dynamics)/book/chapters/29.0_huxley_overview"
         sections:
-          - file: "L11 (Myofilament Dynamics)/book/29.1_huxley_theory"
-          - file: "L11 (Myofilament Dynamics)/book/29.2_example_huxley"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/29.1_huxley_theory"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/29.2_huxley_derivation"
+          - file: "L11 (Myofilament Dynamics)/book/exercises/example_29.1_huxley"
 
       # CHAPTER 30: State-Based Modeling and Cooperativity
-      - file: "L11 (Myofilament Dynamics)/book/30.0_razumova_overview"
+      - file: "L11 (Myofilament Dynamics)/book/chapters/30.0_razumova_overview"
         sections:
-          - file: "L11 (Myofilament Dynamics)/book/30.1_razumova_theory"
-          - file: "L11 (Myofilament Dynamics)/book/30.2_exercise_razumova"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/30.1_razumova_basic_model"
+          - file: "L11 (Myofilament Dynamics)/book/exercises/exercise_30.1_razumova"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/30.2_razumova_cooperativity_theory"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/30.3_razumova_derivation"
+          - file: "L11 (Myofilament Dynamics)/book/exercises/exercise_30.2_razumova_cooperativity"
 
       # CHAPTER 31: Modern Comprehensive Models
-      - file: "L11 (Myofilament Dynamics)/book/31.0_rice_overview"
+      - file: "L11 (Myofilament Dynamics)/book/chapters/31.0_rice_overview"
         sections:
-          - file: "L11 (Myofilament Dynamics)/book/31.1_rice_theory"
-          - file: "L11 (Myofilament Dynamics)/book/31.2_exercise_rice"
+          - file: "L11 (Myofilament Dynamics)/book/chapters/31.1_rice_theory"
+          - file: "L11 (Myofilament Dynamics)/book/exercises/exercise_31.1_rice"
 
   - caption: The finite element method (FEM)
     chapters:
-      - file: "L12 (FEniCS Intro)/L01_FEM_intro.ipynb"
-      - file: "L12 (FEniCS Intro)/L02_FEniCS_intro.ipynb"
-      - file: "L12 (FEniCS Intro)/L02_FEniCS_Diffusion.ipynb"
+      - file: "L12 (FEniCS Intro)/L12_FEM_intro.ipynb"
+      - file: "L12 (FEniCS Intro)/L12_FEniCS_intro.ipynb"
+      - file: "L12 (FEniCS Intro)/L12b_FEniCS_Darcy.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
   - caption: FEniCS Mechanics
@@ -378,6 +382,18 @@ parts:
           - file: "L09 (Calcium Handling)/book/solutions/ex_21.1b_sol"
           - file: "L09 (Calcium Handling)/book/solutions/ex_21.1c_sol"
           - file: "L09 (Calcium Handling)/book/solutions/ex_21.1d_sol"
+
+      # Solutions for Myofilament Dynamics
+      - file: "L11 (Myofilament Dynamics)/book/solutions/ex_sol_myofilament_landing"
+        sections:
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.1a_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.1b_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.1c_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.1d_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.2a_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.2b_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_30.2c_sol"
+          - file: "L11 (Myofilament Dynamics)/book/solutions/ex_31.1_sol"
 
       # Solutions for Python Tutorial
       - file: "L00 (Python Tutorial)/book/solutions/ex_sol_py_tut_landing"
