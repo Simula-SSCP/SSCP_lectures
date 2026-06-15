@@ -215,7 +215,7 @@ parts:
     chapters:
       - file: "L12 (FEniCS Intro)/L12_FEM_intro.ipynb"
       - file: "L12 (FEniCS Intro)/L12_FEniCS_intro.ipynb"
-      - file: "L12 (FEniCS Intro)/L12b_FEniCS_Darcy.ipynb"
+      - file: "L12 (FEniCS Intro)/L12b_FEniCS_details.ipynb"
       - file: "L12 (FEniCS Intro)/solutions.ipynb"
 
   - caption: FEniCS Mechanics
