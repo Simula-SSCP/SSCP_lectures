@@ -74,35 +74,41 @@ parts:
     numbered: 1
     chapters:
       # CHAPTER 9: Module introduction
-      - file: "L04_06 (Modeling Action Potentials)/book/9.0_module_overview"
+      - file: "L04_06 (Modeling Action Potentials)/book/chapters/9.0_module_overview"
 
-      # CHAPTER 10: The Biological and Experimental Basis of Gating
-      - file: "L04_06 (Modeling Action Potentials)/book/10.0_biology_overview"
+      # CHAPTER 10: The biological and experimental basis of gating
+      - file: "L04_06 (Modeling Action Potentials)/book/chapters/10.0_biology_overview"
         sections:
-          - file: "L04_06 (Modeling Action Potentials)/book/10.1_structure_function"
-          - file: "L04_06 (Modeling Action Potentials)/book/10.2_measuring_channels"
-          - file: "L04_06 (Modeling Action Potentials)/book/10.3_exercise_stochastic"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/10.1_structure_function"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/10.2_measuring_channels"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/10.3_from_single_to_macro"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_10.1_stochastic"
 
-      # CHAPTER 11: The Hodgkin-Huxley Gating Framework
-      - file: "L04_06 (Modeling Action Potentials)/book/11.0_hh_gating_overview"
+      # CHAPTER 11: The Hodgkin-Huxley gating equations
+      - file: "L04_06 (Modeling Action Potentials)/book/chapters/11.0_hh_gating_overview"
         sections:
-          - file: "L04_06 (Modeling Action Potentials)/book/11.1_math_of_gating"
-          - file: "L04_06 (Modeling Action Potentials)/book/11.2_voltage_dependence"
-          - file: "L04_06 (Modeling Action Potentials)/book/11.3_experimental_protocols"
-          - file: "L04_06 (Modeling Action Potentials)/book/11.4_exercise_gating_functions"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/11.1_math_of_gating"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_11.1_constant_gating"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/11.2_voltage_dependence"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_11.2_voltage_dep_gating"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/11.3_experimental_protocols"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/11.4_hh_rate_functions"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_11.3_implementing_hh"
 
-      # CHAPTER 12: Simulating the Action Potential
-      - file: "L04_06 (Modeling Action Potentials)/book/12.0_ap_simulation_overview"
+      # CHAPTER 12: Simulating the action potential
+      - file: "L04_06 (Modeling Action Potentials)/book/chapters/12.0_ap_simulation_overview"
         sections:
-          - file: "L04_06 (Modeling Action Potentials)/book/12.1_combining_currents"
-          - file: "L04_06 (Modeling Action Potentials)/book/12.2_exercise_hh_action_potential"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/12.1_combining_currents"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_12.1_hh_action_potential"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_12.2_advanced_hh"
+          #- file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_12.3_phase_plane"
 
-      # CHAPTER 13: Modern Cardiac and Neural Models
-      - file: "L04_06 (Modeling Action Potentials)/book/13.0_modern_models_overview"
+      # CHAPTER 13: Modern cardiac and neural models
+      - file: "L04_06 (Modeling Action Potentials)/book/chapters/13.0_modern_models_overview"
         sections:
-          - file: "L04_06 (Modeling Action Potentials)/book/13.1_the_current_zoo" # Merged cardiac/neuro currents
-          - file: "L04_06 (Modeling Action Potentials)/book/13.2_markov_models"
-          - file: "L04_06 (Modeling Action Potentials)/book/13.3_exercise_grandi_bers"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/13.1_the_current_zoo"
+          - file: "L04_06 (Modeling Action Potentials)/book/chapters/13.2_markov_models"
+          - file: "L04_06 (Modeling Action Potentials)/book/exercises/exercise_13.1_grandi_bers"
 
   - caption: Spatial Conduction and the Cable Equation
     numbered: 1
@@ -334,21 +340,34 @@ parts:
           - file: "L03 (The Cell Membrane and Mass Transport)/book/solutions/ex_8.3b_sol"
 
       # Solutions for Ion Channel Gating and Action Potential Models
-      - file: "L04_06 (Modeling Action Potentials)/book/ex_sol_ap_models_landing"
+      - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_sol_ap_models_landing"
         sections:
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1a_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1b_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_10.1c_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1a_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1b_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1c_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_11.1d_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1a_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1b_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_12.1c_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1a_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1b_sol"
-          - file: "L04_06 (Modeling Action Potentials)/book/ex_13.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_10.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_10.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_10.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.2a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.2b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.3a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.3b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.3c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_11.3d_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1d_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1e_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.1f_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.2a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.2b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.2c_sol"
+          # - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.3a_sol"
+          # - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.3b_sol"
+          # - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_12.3c_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_13.1a_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_13.1b_sol"
+          - file: "L04_06 (Modeling Action Potentials)/book/solutions/ex_13.1c_sol"
 
       # Solutions for Spatial Conduction and the Cable Equation
       - file: "L07 (Cable Equation)/book/solutions/ex_sol_cable_eq_landing"
