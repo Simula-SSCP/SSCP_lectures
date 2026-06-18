@@ -12,7 +12,7 @@ def init_state_values(**values):
     init_values = np.array([1.89999811516, -4.51134525104e-06,\
         0.130660965615, 0.0147730085064, 0.99999783454, 0.999999959256,\
         4.07437173989e-08, 1.81017564384e-06, 3.049496488e-07,\
-        0.00700005394874, 3.41212828972e-08], dtype=np.float_)
+        0.00700005394874, 3.41212828972e-08], dtype=np.float64)
 
     # State indices and limit checker
     state_ind = dict([("SL",(0, Range())), ("intf",(1, Range())),\
@@ -58,7 +58,7 @@ def init_parameter_values(**values):
         0.4, 0, 2, 5, 1, 8, 1, 1, 0.02, 0.002, 70, 10, 1, 2.25, 2.4, 1.4,\
         1.85, 1.9, 0, 120, 50, 3, 1.45, 0.09, 5, 20, 110, 24, 0.1, 1.65, 1.2,\
         0.007, 1.6, 1.3, 1.5, 1.6, 0.5, 0.025, 0.25, 1, 0.05, 0.05, 15, 0.5,\
-        2, 70, 120], dtype=np.float_)
+        2, 70, 120], dtype=np.float64)
 
     # Parameter indices and limit checker
     param_ind = dict([("Qfapp", (0, Range())), ("Qgapp", (1, Range())),\
@@ -215,7 +215,7 @@ def rhs(states, t, parameters, values=None):
 
     # Init return args
     if values is None:
-        values = np.zeros((11,), dtype=np.float_)
+        values = np.zeros((11,), dtype=np.float64)
     else:
         assert isinstance(values, np.ndarray) and values.shape == (11,)
 
@@ -334,7 +334,7 @@ def monitor(states, t, parameters, monitored=None):
 
     # Init return args
     if monitored is None:
-        monitored = np.zeros((65,), dtype=np.float_)
+        monitored = np.zeros((65,), dtype=np.float64)
     else:
         assert isinstance(monitored, np.ndarray) and monitored.shape == (65,)
 
