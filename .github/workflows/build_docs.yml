@@ -33,7 +33,7 @@ jobs:
       - name: Run the lecture notes and build webpage
         run: pixi run jupyter-book build .
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         # always upload artifact, which can include error messages
         if: always()
         with:
